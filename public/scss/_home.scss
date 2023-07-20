@@ -10,6 +10,7 @@ main {
 .main-container {
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 header {
@@ -32,10 +33,12 @@ header {
 
         a {
             color: #ddd;
-            font-weight: bold;
+            // font-weight: bold;
+            // font-family: 'Lumanosimo', cursive;
             padding: 10px 15px;
             text-transform: capitalize;
-            font-family: 'Lumanosimo', cursive;
+            font-family: 'Yeseva One', cursive;
+
         }
     }
 }
@@ -58,7 +61,8 @@ header {
 
     h1,
     h2 {
-        font-family: 'Russo One', sans-serif;
+        // font-family: 'Russo One', sans-serif;
+        font-family: 'Yeseva One', cursive;
         color: #fff;
     }
 
@@ -67,16 +71,18 @@ header {
     }
 
     h2 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     h3 {
-        font-size: 50px;
+        font-size: 40px;
         color: #fff;
         font-family: 'Belanosima', sans-serif;
 
         span {
-            color: #30b3bf;
+            // color: #30b3bf;
+            font-family: 'Great Vibes', cursive;
+            color: #f6880a;
             font-weight: bold;
         }
     }
@@ -120,4 +126,35 @@ header {
     .nav-desktop {
         display: none;
     }
+}
+
+
+// about
+.about {
+    width: 100%;
+    height: 100%;
+
+    .heading {
+        text-align: center;
+        font-family: 'Yeseva One', cursive;
+        font-weight: 900;
+        font-size: 45px;
+
+        span {
+            color: #f6880a;
+        }
+    }
+
+    .desc {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.about-masking {
+    width: 100%;
+    -webkit-mask-image: url(../masking/profile.png);
+    mask-image: url(../masking/profile.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
