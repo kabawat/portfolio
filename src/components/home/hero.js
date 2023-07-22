@@ -1,7 +1,39 @@
 import React from 'react'
-import Typewriter from '../animation/Typewriter';
-const texts = ['Front End Development', 'Backend Development', 'Web Development', 'Android Development',];
+import Link from 'next/link';
+import Image from 'next/image';
 const Hero = () => {
+    const media = [
+        {
+            icon: '/media/Facebook.png',
+            link: '/',
+            delay: 900,
+            title: 'Facebook'
+        },
+        {
+            icon: '/media/instagram.png',
+            link: '/',
+            delay: 700,
+            title: 'instagram'
+        },
+        {
+            icon: '/media/linked.png',
+            link: '/',
+            delay: 500,
+            title: 'LinkedIn'
+        },
+        {
+            icon: '/media/twitter.png',
+            link: '/',
+            delay: 700,
+            title: 'twitter'
+        },
+        {
+            icon: '/media/Whatsapp.png',
+            link: '/',
+            delay: 900,
+            title: 'Whatsapp'
+        },
+    ]
     return (
         <div className="hero-section d-flex justify-content-center align-items-center flex-column">
             <div className="hero-intro">
@@ -10,6 +42,17 @@ const Hero = () => {
                 <h3 className='text-center' data-aos="fade-left" data-aos-delay="200">
                     Web Application <span>|</span> Game Development
                 </h3>
+                <div className="about-social" >
+                    <div className="social-link-list d-flex justify-content-center m-auto">
+                        {
+                            media?.map((item, index) => {
+                                return <Link href={item?.link} className="social-link" key={index} data-aos="fade-up" data-aos-delay={item?.delay}>
+                                    <Image src={item?.icon} alt={item?.title} width={50} height={50} />
+                                </Link>
+                            })
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )
