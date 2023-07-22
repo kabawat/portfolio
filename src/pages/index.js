@@ -22,7 +22,7 @@ const Home = () => {
               <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
                 <div className="about d-flex align-items-center justify-content-center flex-column">
                   <div className="heading" data-aos="zoom-in-up" data-aos-delay="0">
-                    I<span>'</span>m Mukesh Singh,
+                    I<span>&apos;</span>m Mukesh Singh,
                   </div>
                   <div className='heading' data-aos="zoom-in-up" data-aos-delay="200">
                     <strong>
@@ -36,8 +36,8 @@ const Home = () => {
               </Col>
               <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
                 <div className="about p-5">
-                  <div class="about-masking" data-aos="zoom-in-left" data-aos-delay="100">
-                    <Image src="/masking/mk.png" width={1920} height={1080} />
+                  <div className="about-masking" data-aos="zoom-in-left" data-aos-delay="100">
+                    <Image alt='Mukesh Singh, Ms Rajputana' src="/masking/mk.png" width={1920} height={1080} />
                   </div>
                 </div>
               </Col>
