@@ -142,6 +142,7 @@ header {
         font-weight: 900;
         font-size: 45px;
         color: #fafafa;
+        line-height: 1.2;
 
         span {
             color: #f6880a;
@@ -152,7 +153,10 @@ header {
             width: 0px;
             color: transparent;
         }
+    }
 
+    .heading.typewriter {
+        padding: 25px 0px;
     }
 
     .desc {
@@ -210,9 +214,7 @@ header {
     .nav-desktop {
         display: none;
     }
-}
 
-@media screen and (max-width : 768px) {
     header {
         .logo {
             font-size: 36px;
@@ -233,12 +235,21 @@ header {
             font-size: 28px;
         }
     }
-}
 
-@media screen and (max-width:375px) {
     .about {
         .heading {
-            // font-size: 40px;
+            line-height: 1.2;
+        }
+
+        .heading.typewriter {
+            padding: 20px 0px;
+            font-size: 28px;
+
+            b {
+                font-size: 40px;
+            }
         }
     }
 }
+
+@media screen and (max-width:375px) {}

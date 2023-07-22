@@ -24,9 +24,9 @@ const Home = () => {
                   <div className="heading" data-aos="zoom-in-up" data-aos-delay="0">
                     I<span>&apos;</span>m Mukesh Singh,
                   </div>
-                  <div className='heading' data-aos="zoom-in-up" data-aos-delay="200">
+                  <div className='heading typewriter' data-aos="zoom-in-up" data-aos-delay="200">
                     <strong>
-                      I Am Into <span className='hide'>→</span><br /> <span className="hide">→</span><strong><Typewriter texts={texts} delay={200} /></strong>
+                      <b>I Am Into</b> <span className='hide'>→</span><br /> <span className="hide">→</span><strong><Typewriter texts={texts} delay={200} /></strong>
                     </strong>
                   </div>
                   <p className='desc' data-aos="zoom-out-up" data-aos-delay="400">
