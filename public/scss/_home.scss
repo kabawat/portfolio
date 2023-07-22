@@ -105,6 +105,8 @@ header {
         h3 {
             span {
                 display: block;
+                color: transparent;
+                line-height: 0px;
             }
         }
 
@@ -120,6 +122,10 @@ header {
 
 .hero-intro {
     min-width: 30%;
+
+    span {
+        color: #f6880a;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -143,18 +149,23 @@ header {
         span {
             color: #f6880a;
         }
+
+        span.hide {
+            color: transparent;
+        }
     }
 
     .desc {
         font-size: 18px;
         text-align: center;
+        font-family: 'Yeseva One', cursive;
     }
 }
 
 .about-masking {
-    width: 100%;
-    -webkit-mask-image: url(../masking/profile.png);
-    mask-image: url(../masking/profile.png);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
+    // width: 100%;
+    // -webkit-mask-image: url(../masking/making.png);
+    // mask-image: url(../masking/making.png);
+    // -webkit-mask-repeat: no-repeat;
+    // mask-repeat: no-repeat;
 }
