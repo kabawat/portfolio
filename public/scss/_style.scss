@@ -10,6 +10,11 @@ a {
     text-decoration: none;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*^^^^^^^^^^^^^^^^^^^^ Scroll Top ^^^^^^^^^^^^^^^^^^^^^*/
 ::-webkit-scrollbar {
     width: 0px;

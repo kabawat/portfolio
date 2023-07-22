@@ -26,7 +26,7 @@ const Home = () => {
                   </div>
                   <div className='heading' data-aos="zoom-in-up" data-aos-delay="200">
                     <strong>
-                      I Am Into <span>→</span><br /> <span className="hide">→</span><strong><Typewriter texts={texts} delay={200} /></strong>
+                      I Am Into <span className='hide'>→</span><br /> <span className="hide">→</span><strong><Typewriter texts={texts} delay={200} /></strong>
                     </strong>
                   </div>
                   <p className='desc' data-aos="zoom-out-up" data-aos-delay="400">
@@ -36,7 +36,7 @@ const Home = () => {
               </Col>
               <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
                 <div className="about p-5">
-                  <div className="about-masking" data-aos="zoom-in-left" data-aos-delay="100">
+                  <div className="about-masking" data-aos="zoom-in-up" data-aos-delay="100">
                     <Image alt='Mukesh Singh, Ms Rajputana' src="/masking/mk.png" width={1920} height={1080} />
                   </div>
                 </div>
