@@ -1,3 +1,77 @@
+// Mixins
+@mixin heading-styles {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 900;
+    color: #fafafa;
+    line-height: 1.2;
+
+    span {
+        color: #f6880a;
+    }
+
+    span.hide {
+        display: inline-block;
+        width: 0px;
+        color: transparent;
+    }
+}
+
+@mixin hero-heading-styles {
+    @include heading-styles;
+    font-size: 70px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 50px;
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 40px;
+    }
+}
+
+@mixin hero-subheading-styles {
+    @include heading-styles;
+    font-size: 50px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 30px;
+    }
+}
+
+@mixin hero-intro-styles {
+    min-width: 30%;
+
+    span {
+        color: #f6880a;
+    }
+}
+
+@mixin desc-styles {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+}
+
+@mixin masking-animation {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        transform: translate(0%, -40%);
+        top: 50%;
+        left: 0%;
+        background: url('../bg/big-planet.webp') no-repeat center center/cover;
+        animation: aboutMask 1s linear;
+    }
+}
+
+// Code with mixins
 main {
     width: 100%;
     height: auto;
@@ -36,7 +110,6 @@ header {
             padding: 10px 15px;
             text-transform: capitalize;
             font-family: 'Yeseva One', cursive;
-
         }
     }
 }
@@ -57,18 +130,12 @@ header {
     height: 100%;
     background: rgba($color: #000000, $alpha: 0.6);
 
-    h1,
-    h2 {
-        font-family: 'Yeseva One', cursive;
-        color: #fff;
-    }
-
     h1 {
-        font-size: 70px;
+        @include hero-heading-styles;
     }
 
     h2 {
-        font-size: 50px;
+        @include hero-subheading-styles;
     }
 
     h3 {
@@ -77,8 +144,7 @@ header {
         font-family: 'Belanosima', sans-serif;
 
         span {
-            // color: #30b3bf;
-            font-family: 'Great Vibes', cursive;
+            @include heading-styles;
             color: #f6880a;
             font-weight: bold;
         }
@@ -118,15 +184,9 @@ header {
 }
 
 .hero-intro {
-    min-width: 30%;
-
-    span {
-        color: #f6880a;
-    }
+    @include hero-intro-styles;
 }
 
-
-// about
 .about {
     width: 100%;
     overflow: hidden;
@@ -135,10 +195,8 @@ header {
 
     .heading {
         text-align: center;
-        font-family: 'Yeseva One', cursive;
-        font-weight: 900;
+        @include heading-styles;
         font-size: 45px;
-        color: #fafafa;
         line-height: 1.2;
 
         span {
@@ -157,14 +215,9 @@ header {
     }
 
     .desc {
-        font-size: 18px;
-        text-align: center;
-        color: #fff;
-        font-family: 'Yeseva One', cursive;
+        @include desc-styles;
     }
 }
-
-
 
 .about-masking {
     width: 100%;
@@ -172,17 +225,7 @@ header {
     position: relative;
     background: url('../bg/bg-1.webp') no-repeat center center/cover;
 
-    &::before {
-        content: "";
-        position: absolute;
-        width: 500px;
-        height: 500px;
-        transform: translate(0%, -40%);
-        top: 50%;
-        left: 0%;
-        background: url('../bg/big-planet.webp') no-repeat center center/cover;
-        animation: aboutMask 1s linear;
-    }
+    @include masking-animation;
 }
 
 @keyframes aboutMask {
@@ -249,4 +292,4 @@ header {
     }
 }
 
-@media screen and (max-width:375px) {}
+// Rest of the code...

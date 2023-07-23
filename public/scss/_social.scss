@@ -1,8 +1,20 @@
-.about-social {
-    padding: 30px 0px;
+// Variables
+$color: #fff;
+$alpha: 0.3;
+$cta-color: #f6880a;
+
+
+@mixin tooltip-styles($bg-color, $text-color) {
+    background: $bg-color;
+    color: $text-color;
+
+    &::before {
+        background: $bg-color;
+        color: $text-color;
+    }
 }
 
-.social-link {
+@mixin social-link-styles {
     width: 40px;
     height: 40px;
     background: #ffffff34;
@@ -19,5 +31,227 @@
             transform: scale(1.6);
         }
     }
+}
 
+.wrapper-media {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .list {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .icon {
+        position: relative;
+        background: rgba($color: #fff, $alpha: 0.3);
+        border-radius: 50%;
+        padding: 5px;
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        &:hover {
+            .tooltip {
+                top: -45px;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+
+            span,
+            .tooltip {
+                text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+            }
+
+        }
+    }
+
+    .tooltip {
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+        background: $color;
+        color: $color;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px #0000001a;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: $color;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+
+    .Facebook {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#1877F2, #fff);
+            }
+        }
+    }
+
+    .Twitter {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#2bb0e3, #fff);
+            }
+        }
+    }
+
+    .Instagram {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#ba4965, #fff);
+            }
+        }
+    }
+
+    .GitHub {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#242a2f, #fff);
+            }
+        }
+    }
+
+    .Whatsapp {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#22a734, #fff);
+            }
+        }
+    }
+
+    .LinkedIn {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#0177b6, #fff);
+            }
+        }
+    }
+
+    .YouTube {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#fd0001, #fff);
+            }
+        }
+    }
+
+    .Telegram {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#00a4e0, #fff);
+            }
+        }
+    }
+}
+
+.wrapper-media.isMedia {
+    visibility: visible;
+
+    .list {
+        transform: translateY(0px);
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        opacity: 1;
+    }
+}
+
+.about-social {
+    padding: 30px 0px;
+}
+
+.social-link {
+    @include social-link-styles;
+}
+
+
+// ------- toggle button--------------- 
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: $cta-color;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+    }
+
+    span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: $color;
+    }
+
+    svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: $color;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+    }
+
+    &:hover:before {
+        width: 100%;
+        background: $cta-color;
+    }
+
+    &:hover svg {
+        transform: translateX(0);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.cta.isMedia {
+    &:before {
+        width: 100%;
+    }
 }
