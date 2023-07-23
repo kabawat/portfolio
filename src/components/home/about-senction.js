@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-const texts = ['Front End Development', 'Backend Development', 'Web Development', 'Full-Stack Development', 'Game Development',];
 import Image from 'next/image'
 import Typewriter from '@/components/animation/Typewriter';
+import texts from '@/data/profile';
 
 const AboutSection = () => {
     return (

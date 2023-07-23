@@ -1,30 +1,9 @@
+import navList from '@/data/navlist'
 import Link from 'next/link'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
 const Header = () => {
-    const navList = [
-        {
-            title: 'home',
-            link: '/'
-        },
-        {
-            title: 'contact',
-            link: '/'
-        },
-        {
-            title: 'about us',
-            link: '/'
-        },
-        {
-            title: 'galary',
-            link: '/'
-        },
-        {
-            title: 'skills',
-            link: '/'
-        },
-    ]
     return (
         <header>
             <Container className='d-flex justify-content-between align-items-center'>

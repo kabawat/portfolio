@@ -1,4 +1,10 @@
 // Mixins
+// Variables
+$color: #fff;
+$dark: #000;
+$alpha: 0.3;
+$cta-color: #f6880a;
+
 @mixin heading-styles {
     font-family: 'Yeseva One', cursive;
     font-weight: 900;
@@ -292,4 +298,54 @@ header {
     }
 }
 
-// Rest of the code...
+
+
+// -------------- skill ----------------
+.skill {
+    width: 100%;
+    background: #f4f4f4;
+    // background : url('../bg/bg-5.jpg');
+}
+
+.skils-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .skill-icon-box {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid #e0e0e0;
+        padding: 6px;
+        margin-right: 10px;
+
+        .skill-icon {
+            width: 100%;
+            height: 100%;
+            padding: 12px;
+            border-radius: 50%;
+            background: #e0e0e0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+
+    .skill-heading {
+        margin: 20px 0px 0px;
+        // font-family: 'Lora', serif;
+        color: #0c2c2b;
+        font-weight: bold;
+    }
+
+    .skill-desc {
+        color: #0829279f;
+        font-family: 'Lora', serif;
+    }
+}
