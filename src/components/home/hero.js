@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import { FiShare2 } from 'react-icons/fi'
 const media = [
     {
         icon: '/media/facebook.png',
