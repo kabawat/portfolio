@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 const media = [
     {
-        icon: '/media/facebook.png',
+        icon: '/media/Facebook.png',
         link: '/',
         delay: 900,
         title: 'Facebook'
@@ -57,12 +57,12 @@ const Hero = () => {
     return (
         <div className="hero-section d-flex justify-content-center pt-100 align-items-center flex-column">
             <div className="hero-intro">
-                <h2 className='text-center' data-aos="fade-right" data-aos-delay="200">Hi There!</h2>
-                <h1 className='text-center py-2' data-aos="zoom-in" data-aos-delay="0">Welcome To My <span>Portfolio!</span></h1>
-                <h3 className='text-center' data-aos="fade-left" data-aos-delay="200">
+                <h2 className='text-center' data-aos="zoom-in-up" data-aos-delay="0">Hi There!</h2>
+                <h1 className='text-center py-2' data-aos="zoom-in" data-aos-delay="200">Welcome To My <span>Portfolio!</span></h1>
+                <h3 className='text-center' data-aos="zoom-in-up" data-aos-delay="400">
                     Web Application <span>|</span> Game Development
                 </h3>
-                <div className="about-social" >
+                <div className="about-social" data-aos="zoom-in-up" data-aos-delay="400">
                     <div className="d-flex justify-content-center">
                         <button class={`cta ${isMedia && 'isMedia'}`} onClick={() => setIsMedia(!isMedia)}>
                             <span>Follow me</span>
@@ -77,7 +77,7 @@ const Hero = () => {
                             {
                                 media?.map((item, index) => {
                                     return <div className='list' key={index} style={{ transitionDelay: isMedia ? `${index * 0.1}s` : '0s' }}>
-                                        <Link href={item?.link} className={`social-link icon ${item?.title}`} data-aos="fade-up" data-aos-delay={item?.delay}>
+                                        <Link href={item?.link} className={`social-link icon ${item?.title}`}>
                                             <span class="tooltip">{item?.title}</span>
                                             <span>
                                                 <Image src={item?.icon} alt={item?.title} width={50} height={50} />
