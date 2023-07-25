@@ -2,7 +2,10 @@ import Header from '@/components/header'
 import Skills from '@/components/home/Skills'
 import AboutSection from '@/components/home/about-senction'
 import Hero from '@/components/home/hero'
+import Image from 'next/image'
 import React from 'react'
+
+
 const Home = () => {
   return (
     <main>
@@ -21,8 +24,14 @@ const Home = () => {
           <Skills />
         </div>
       </div>
-    </main>
+    </main >
   )
 }
 
 export default Home
+
+// function Example(props) {
+//   return (
+//     { props.children }
+//   );
+// }
