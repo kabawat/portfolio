@@ -19,8 +19,7 @@ const Home = () => {
         <div className='py-5 about-masking'>
           <AboutSection />
         </div>
-        <div className="py-5 skill">
-          <h2 className='text-center'>Technical Skills</h2>
+        <div className="py-5 about">
           <Skills />
         </div>
       </div>

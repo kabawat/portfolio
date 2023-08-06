@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -28,49 +29,25 @@ function getTotalYearsAndMonths(pastDate) {
 
 const Skills = () => {
     return (
-        <Container>
-            <p className='text-center'>
-                Experienced React.js Frontend Developer with 1 year of hands-on experience creating dynamic and
-                responsive user interfaces. Proficient in building efficient and scalable web applications using React.js,
-                HTML, CSS, and JavaScript. Additionally, gained 6 months of practical exposure to the MERN stack,
-                utilizing MongoDB, Express.js, React.js, and Node.js to develop full-stack applications. Strong problemsolving skills and a passion for delivering high-quality, user-centric solutions
-            </p>
-            <Row>
-                {
-                    skills?.map((item, keys) => {
-                        return <Col xxl={3} xl={3} lg={3} md={4} sm={6} xs={12} key={keys} className='py-4' data-aos="fade-up" data-aos-delay={`${keys * 100}`}>
-                            <div className="skils-container d-flex align-items-center">
-                                {/* <div className="skill-icon-box">
-                                    <div className="skill-icon">
-                                        <Image src={item?.icon} alt={item?.skill} width={80} height={80} />
-                                    </div>
-                                </div> */}
-                                <div className="skils-circul">
-                                    <CircularProgressbarWithChildren value={item?.exp_level} styles={buildStyles({
-                                        pathColor: item?.stoke,
-                                    })}>
-                                        <div className="p-3">
-                                            <Image width={80} height={80}
-                                                src={item?.icon}
-                                                alt="doge"
-                                            />
-                                        </div>
-                                    </CircularProgressbarWithChildren>
-                                </div>
-                                <div>
-                                    <h5 className="skill-heading">
-                                        {item?.skill}
-                                    </h5>
-                                    <p className='skill-desc'>
-                                        Expriance : <strong>{getTotalYearsAndMonths(item?.expriance)}</strong> years
-                                    </p>
-                                </div>
-                            </div>
-                        </Col>
-                    })
-                }
+        <Container fluid>
+            {/*  */}
+
+            <Row className='p-100 align-items-center'>
+                <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <h2 className='text-center Experience-heading'> Experience</h2>
+                    <p className='text-center Experience-desc pt-4'>
+                        Experienced React.js Frontend Developer with 1 year of hands-on UI creation. Skilled in building scalable web apps with React.js, HTML, CSS, and JavaScript. 6 months of MERN stack experience (MongoDB, Express.js, React.js, Node.js) for full-stack development. Strong problem-solving, user-focused passion.
+                    </p>
+                </Col>
+                <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <div className="about-img">
+                        <Image src='/image/code-7.webp' width={1920} height={1080} />
+                    </div>
+                </Col>
             </Row>
-        </Container>
+
+
+        </Container >
     )
 }
 

@@ -300,65 +300,76 @@ header {
 
 
 
-// -------------- skill ----------------
-.skill {
+// -------------- about ----------------
+.Experience {
+    background: #ffffff;
     width: 100%;
-    background: #f4f4f4;
-    // background : url('../bg/bg-5.jpg');
 }
 
-.skils-circul {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    img {
-        // width: 50%;
-        // height: 50%;
-    }
+.Experience-heading {
+    font-size: 60px;
 }
 
-.skils-container {
+.Experience-desc {
+    font-size: 20px;
+}
+
+.about-img {
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    .skill-icon-box {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        border: 2px solid #e0e0e0;
-        padding: 6px;
-        margin-right: 10px;
-
-        .skill-icon {
-            width: 100%;
-            height: 100%;
-            padding: 12px;
-            border-radius: 50%;
-            background: #e0e0e0;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-    }
-
-
-    .skill-heading {
-        margin: 20px 0px 0px;
-        // font-family: 'Lora', serif;
-        color: #0c2c2b;
-        font-weight: bold;
-    }
-
-    .skill-desc {
-        color: #0829279f;
-        font-family: 'Lora', serif;
-    }
+    position: relative;
+    right: -50px;
 }
+
+// .skills-card {
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 10px;
+//     box-shadow: 4px 4px 8px rgba($color: #000000, $alpha: 0.1);
+//     background: #fff;
+// }
+
+// .skills-icon {
+//     width: 100%;
+//     height: 60px;
+//     position: relative;
+// }
+
+// .skils-circul {
+//     box-shadow: -4px 0px 16px rgba($color: #000000, $alpha: 0.1);
+//     width: 100px;
+//     height: 100px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-right: 20px;
+//     position: absolute;
+//     left: 50%;
+//     top: 0px;
+//     transform: translate(-50%, -50%);
+//     background: #fff;
+//     border-radius: 50%;
+
+//     img {
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+// .skills-list {
+//     width: 100%;
+//     padding: 20px 40px;
+
+//     .icon {
+//         width: 20px;
+//         height: 20px;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+
+//     .item {
+//         padding-left: 10px;
+//     }
+// }
