@@ -17,8 +17,8 @@ const Skills = () => {
             className="mySwiper"
           >
             {
-              frontSkills?.map((item) => {
-                return <SwiperSlide style={{ background: item?.bg }}>
+              frontSkills?.map((item, keys) => {
+                return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                   <div className='skills-info'>
                     <div className='skills-icon'>
                       <Image src={item?.icon} width={100} height={100} />
@@ -42,8 +42,8 @@ const Skills = () => {
             className="mySwiper"
           >
             {
-              backendSkills?.map((item) => {
-                return <SwiperSlide style={{ background: item?.bg }}>
+              backendSkills?.map((item, keys) => {
+                return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                   <div className='skills-info'>
                     <div className='skills-icon'>
                       <Image src={item?.icon} width={100} height={100} />
@@ -68,8 +68,8 @@ const Skills = () => {
             className="mySwiper"
           >
             {
-              Database?.map((item) => {
-                return <SwiperSlide style={{ background: item?.bg }}>
+              Database?.map((item, keys) => {
+                return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                   <div className='skills-info'>
                     <div className='skills-icon'>
                       <Image src={item?.icon} width={100} height={100} />
@@ -94,8 +94,8 @@ const Skills = () => {
             className="mySwiper"
           >
             {
-              other?.map((item) => {
-                return <SwiperSlide style={{ background: item?.bg }}>
+              other?.map((item, keys) => {
+                return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                   <div className='skills-info'>
                     <div className='skills-icon'>
                       <Image src={item?.icon} width={100} height={100} />
