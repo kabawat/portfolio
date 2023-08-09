@@ -1,9 +1,10 @@
 import Header from '@/components/header'
+import About from '@/components/home/About'
 import Skills from '@/components/home/Skills'
 import AboutSection from '@/components/home/about-senction'
 import Hero from '@/components/home/hero'
-import Image from 'next/image'
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 
 const Home = () => {
@@ -20,7 +21,13 @@ const Home = () => {
           <AboutSection />
         </div>
         <div className="py-5 about">
-          <Skills />
+          <About />
+        </div>
+        <div className="py-5 about">
+          <Container>
+            <h3 className='text-center'>Development Skills</h3>
+            <Skills />
+          </Container>
         </div>
       </div>
     </main >

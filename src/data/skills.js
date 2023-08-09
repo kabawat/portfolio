@@ -1,126 +1,110 @@
 const skills = {
-    fontend : [
+    frontSkills: [
         {
-            icon: '/skill/html.png',
-            skill: 'Html & Html5',
-            expriance: "2019-08-01",
-            exp_level: 90,
-            stoke: "#e95a24"
+            title: 'HTML',
+            icon: "/skill/html.png",
+            bg: '#173459'
         },
         {
-            icon: '/skill/css.png',
-            skill: 'Css & Css3',
-            expriance: "2019-10-01",
-            exp_level: 90,
-            stoke: "#2a65f0"
+            title: 'CSS',
+            icon: "/skill/css.png",
+            bg: '#165c7d'
         },
         {
-            icon: '/skill/bootstrap.png',
-            skill: 'Bootstrap',
-            expriance: "2020-3-01",
-            exp_level: 90,
-            stoke: "#8011f8"
+            title: 'JavaScript',
+            icon: "/skill/javascript.png",
+            bg: '#ddd'
         },
         {
-            icon: '/skill/javascript.png',
-            skill: 'Javascript',
-            expriance: "2020-8-01",
-            exp_level: 70,
-            stoke: "#e9ca2c"
+            title: 'Bootstrap',
+            icon: "/skill/bootstrap.png",
+            bg: '#9665dc'
         },
         {
-            icon: '/skill/react.png',
-            skill: 'React Js',
-            expriance: "2022-01-01",
-            exp_level: 95,
-            stoke: "#72def8"
-        },
-    ],
-    
-    backend : [
-        {
-            icon: '/skill/node.png',
-            skill: 'Node Js',
-            expriance: "2022-07-01",
-            exp_level: 56,
-            stoke: "#22b35e"
+            title: 'React Js',
+            icon: "/skill/react.png",
+            bg: '#333'
         },
         {
-            icon: '/skill/express.png',
-            skill: 'Express Js',
-            expriance: "2022-08-01",
-            exp_level: 70,
-            stoke: "#f1c30f"
+            title: 'styled Components',
+            icon: "/skill/styled.png",
+            bg: '#bf4f74'
+        },
+        {
+            title: 'React Native',
+            icon: "/skill/react.png",
+            bg: '#bf4f74'
         },
     ],
 
-    fullStack : [
+    backendSkills: [
         {
-            icon: '/skill/next.png',
-            skill: 'Next Js',
-            expriance: "2022-11-01",
-            exp_level: 70,
-            stoke: "#989898"
+            title: 'Node Js',
+            icon: "/skill/node.png",
+            bg: '#173459'
         },
         {
-            icon: '/skill/php.png',
-            skill: 'PHP',
-            expriance: "2020-11-01",
-            exp_level: 40,
-            stoke: "#546290"
-        },
-    ],
-
-    database : [
-        {
-            icon: '/skill/mongodb.png',
-            skill: 'MongoDB Js',
-            expriance: "2022-10-01",
-            exp_level: 50,
-            stoke: "#0f934c"
+            title: 'Express Js',
+            icon: "/skill/express.png",
+            bg: '#173459'
         },
         {
-            icon: '/skill/mongodb.png',
-            skill: 'MySQL',
-            expriance: "2022-10-01",
-            exp_level: 50,
-            stoke: "#0f934c"
+            title: 'PHP',
+            icon: "/skill/php.png",
+            bg: '#173459'
+        },
+        {
+            title: 'GraphQL',
+            icon: "/skill/GraphQL.png",
+            bg: '#173459'
         },
     ],
 
-    mobile : [
+    Database: [
         {
-            icon: '/skill/native.png',
-            skill: 'React Native',
-            expriance: "2023-01-01",
-            exp_level: 30,
-            stoke: "#60dafa"
+            title: 'MongoDB',
+            icon: "/skill/mongodb.png",
+            bg: '#173459'
+        },
+        {
+            title: 'MySQL',
+            icon: "/skill/MySQL.png",
+            bg: '#173459'
         },
     ],
-    
-    game :[
+
+    other: [
         {
-            icon: '/skill/C-charp.png',
-            skill: 'C#',
-            expriance: "2023-02-01",
-            exp_level: 60,
-            stoke: "#9b69d8"
+            title: 'Python',
+            icon: "/skill/python.png",
+            bg: '#173459'
         },
         {
-            icon: '/skill/C-charp.png',
-            skill: 'Unity',
-            expriance: "2023-02-01",
-            exp_level: 30,
-            stoke: "#9b69d8"
+            title: 'C Language',
+            icon: "/skill/c-language.png",
+            bg: '#173459'
         },
         {
-            icon: '/skill/C-charp.png',
-            skill: 'Blender',
-            expriance: "2023-02-01",
-            exp_level: 20,
-            stoke: "#9b69d8"
+            title: 'C#',
+            icon: "/skill/C-charp.png",
+            bg: '#173459'
         },
-    ]
+        {
+            title: 'C++',
+            icon: "/skill/c-plus.png",
+            bg: '#173459'
+        },
+        {
+            title: 'Java',
+            icon: "/skill/java.png",
+            bg: '#173459'
+        },
+        {
+            title: 'Unity Game',
+            icon: "/skill/Unity.png",
+            bg: '#173459'
+        },
+    ],
 
 }
 
