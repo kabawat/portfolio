@@ -7,8 +7,8 @@ const Skills = () => {
   const { frontSkills, backendSkills, Database, other } = skills
   return (
     <Row>
-      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4  skills-heading'>In Font-End</div>
+      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3' data-aos="fade-up" data-aos-delay="100">
+        <div className='text-center my-4 skills-heading' data-aos="fade-up" data-aos-delay="100">In Font-End</div>
         <div className='skills'>
           <Swiper
             effect={'cards'}
@@ -32,8 +32,8 @@ const Skills = () => {
         </div>
       </Col>
 
-      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4 font-large skills-heading'>In Back-End </div>
+      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3' data-aos="fade-up" data-aos-delay="200">
+        <div className='text-center my-4 font-large skills-heading' data-aos="fade-up" data-aos-delay="100">In Back-End </div>
         <div className='skills'>
           <Swiper
             effect={'cards'}
@@ -58,8 +58,8 @@ const Skills = () => {
       </Col>
 
 
-      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4 font-large skills-heading'>In Database</div>
+      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3' data-aos="fade-up" data-aos-delay="300">
+        <div className='text-center my-4 font-large skills-heading' data-aos="fade-up" data-aos-delay="100">In Database</div>
         <div className='skills'>
           <Swiper
             effect={'cards'}
@@ -84,8 +84,8 @@ const Skills = () => {
       </Col>
 
 
-      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4 font-large skills-heading'>Other Skills</div>
+      <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3' data-aos="fade-up" data-aos-delay="400">
+        <div className='text-center my-4 font-large skills-heading' data-aos="fade-up" data-aos-delay="100">Other Skills</div>
         <div className='skills'>
           <Swiper
             effect={'cards'}

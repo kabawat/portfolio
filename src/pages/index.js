@@ -25,7 +25,7 @@ const Home = () => {
         </div>
         <div className="py-5 skills">
           <Container>
-            <h2 className='text-center'>Development Skills</h2>
+            <h2 className='text-center' data-aos="zoom-in-up" data-aos-delay="0">Development Skills</h2>
             <Skills />
           </Container>
         </div>
