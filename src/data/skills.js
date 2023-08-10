@@ -8,12 +8,12 @@ const skills = {
         {
             title: 'CSS',
             icon: "/skill/css.png",
-            bg: '#165c7d'
+            bg: '#163256'
         },
         {
             title: 'JavaScript',
             icon: "/skill/javascript.png",
-            bg: '#ddd'
+            bg: '#666343'
         },
         {
             title: 'Bootstrap',
@@ -32,8 +32,8 @@ const skills = {
         },
         {
             title: 'React Native',
-            icon: "/skill/react.png",
-            bg: '#bf4f74'
+            icon: "/skill/native.png",
+            bg: '#5fd3f4'
         },
     ],
 
@@ -41,22 +41,22 @@ const skills = {
         {
             title: 'Node Js',
             icon: "/skill/node.png",
-            bg: '#173459'
+            bg: '#252c3b'
         },
         {
             title: 'Express Js',
             icon: "/skill/express.png",
-            bg: '#173459'
+            bg: '#7e7e7e'
         },
         {
             title: 'PHP',
             icon: "/skill/php.png",
-            bg: '#173459'
+            bg: '#2a4758'
         },
         {
             title: 'GraphQL',
             icon: "/skill/GraphQL.png",
-            bg: '#173459'
+            bg: '#202020'
         },
     ],
 
@@ -77,7 +77,7 @@ const skills = {
         {
             title: 'Python',
             icon: "/skill/python.png",
-            bg: '#173459'
+            bg: '#0e1c2e'
         },
         {
             title: 'C Language',
@@ -87,17 +87,17 @@ const skills = {
         {
             title: 'C#',
             icon: "/skill/C-charp.png",
-            bg: '#173459'
+            bg: '#66007d'
         },
         {
             title: 'C++',
             icon: "/skill/c-plus.png",
-            bg: '#173459'
+            bg: '#85bbf6'
         },
         {
             title: 'Java',
             icon: "/skill/java.png",
-            bg: '#173459'
+            bg: '#000'
         },
         {
             title: 'Unity Game',

@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <Row>
       <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4'>In Font-End</div>
+        <div className='text-center my-4  skills-heading'>In Font-End</div>
         <div className='skills'>
           <Swiper
             effect={'cards'}
@@ -33,7 +33,7 @@ const Skills = () => {
       </Col>
 
       <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4 font-large'>In Back-End </div>
+        <div className='text-center my-4 font-large skills-heading'>In Back-End </div>
         <div className='skills'>
           <Swiper
             effect={'cards'}
@@ -59,7 +59,7 @@ const Skills = () => {
 
 
       <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4 font-large'>In Database</div>
+        <div className='text-center my-4 font-large skills-heading'>In Database</div>
         <div className='skills'>
           <Swiper
             effect={'cards'}
@@ -85,7 +85,7 @@ const Skills = () => {
 
 
       <Col xxl={3} xl={3} lg={3} md={6} sm={6} xs={12} className='py-3'>
-        <div className='text-center my-4 font-large'>Other Skills</div>
+        <div className='text-center my-4 font-large skills-heading'>Other Skills</div>
         <div className='skills'>
           <Swiper
             effect={'cards'}
