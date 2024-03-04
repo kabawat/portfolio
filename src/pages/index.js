@@ -26,7 +26,7 @@ const Home = () => {
         </div>
         <div className="py-5 skills">
           <div className="bg">
-            <Image src="/bg/blumba.png" width={1920} height={1080} />
+            {/* <Image src="/bg/blumba.png" width={1920} height={1080} /> */}
           </div>
           <Container>
             <h2 className='text-center' data-aos="zoom-in-up" data-aos-delay="0">Development Skills</h2>
