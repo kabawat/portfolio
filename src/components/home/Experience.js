@@ -2,32 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
-// import skills from '@/data/skills';
-// import {
-//     CircularProgressbarWithChildren,
-//     buildStyles
-// } from "react-circular-progressbar";
-
-
-// function getTotalYearsAndMonths(pastDate) {
-//     const currentDate = new Date();
-//     const past = new Date(pastDate);
-
-//     const yearDiff = currentDate.getFullYear() - past.getFullYear();
-//     const monthDiff = currentDate.getMonth() - past.getMonth();
-
-//     let totalYears = yearDiff;
-//     let totalMonths = monthDiff;
-
-//     if (monthDiff < 0) {
-//         totalYears--;
-//         totalMonths = 12 + monthDiff;
-//     }
-
-//     return `${totalYears}.${totalMonths}`;
-// }
-
-const About = () => {
+const Experience = () => {
     return (
         <Container fluid>
             {/*  */}
@@ -51,4 +26,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Experience

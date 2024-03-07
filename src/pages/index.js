@@ -1,5 +1,5 @@
 import Header from '@/components/header'
-import About from '@/components/home/About'
+import Experience from '@/components/home/Experience'
 import Skills from '@/components/home/Skills'
 import AboutSection from '@/components/home/about-senction'
 import Hero from '@/components/home/hero'
@@ -22,12 +22,9 @@ const Home = () => {
           <AboutSection />
         </div>
         <div className="py-5 about">
-          <About />
+          <Experience />
         </div>
         <div className="py-5 skills">
-          <div className="bg">
-            {/* <Image src="/bg/blumba.png" width={1920} height={1080} /> */}
-          </div>
           <Container>
             <h2 className='text-center' data-aos="zoom-in-up" data-aos-delay="0">Development Skills</h2>
             <Skills />

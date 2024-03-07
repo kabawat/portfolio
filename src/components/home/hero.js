@@ -16,7 +16,7 @@ const Hero = () => {
                 </h3>
                 <div className="about-social" data-aos="zoom-in-up" data-aos-delay="400">
                     <div className="d-flex justify-content-center">
-                        <button class={`cta ${isMedia && 'isMedia'}`} onClick={() => setIsMedia(!isMedia)}>
+                        <button className={`cta ${isMedia && 'isMedia'}`} onClick={() => setIsMedia(!isMedia)}>
                             <span>Follow me</span>
                             <svg viewBox="0 0 13 10" height="10px" width="15px">
                                 <path d="M1,5 L11,5"></path>
@@ -25,12 +25,12 @@ const Hero = () => {
                         </button>
                     </div>
                     <div className="social-link-list d-flex justify-content-center m-auto">
-                        <div class={`wrapper-media ${isMedia && 'isMedia'}`}>
+                        <div className={`wrapper-media ${isMedia && 'isMedia'}`}>
                             {
                                 media?.map((item, index) => {
                                     return <div className='list' key={index} style={{ transitionDelay: isMedia ? `${index * 0.1}s` : '0s' }}>
                                         <Link href={item?.link} className={`social-link icon ${item?.title}`}>
-                                            <span class="tooltip">{item?.title}</span>
+                                            <span className="tooltip">{item?.title}</span>
                                             <span>
                                                 <Image src={item?.icon} alt={item?.title} width={50} height={50} />
                                             </span>

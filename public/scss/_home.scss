@@ -106,7 +106,10 @@ header {
     .logo {
         color: #fafafa;
         font-size: 45px;
-        font-family: 'Permanent Marker', cursive;
+        // font-family: 'Permanent Marker', cursive;
+        span{
+            color: #f6880a;
+        }
     }
 
     .link {
