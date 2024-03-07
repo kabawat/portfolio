@@ -106,8 +106,9 @@ header {
     .logo {
         color: #fafafa;
         font-size: 45px;
+
         // font-family: 'Permanent Marker', cursive;
-        span{
+        span {
             color: #f6880a;
         }
     }
@@ -364,4 +365,9 @@ header {
     font-size: 20px;
     font-weight: 600;
     color: #f6880a;
+}
+
+.desc-text {
+    color: #8492a6;
+    letter-spacing: 0.03em;
 }

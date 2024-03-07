@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Experience from '@/components/home/Experience'
 import Skills from '@/components/home/Skills'
@@ -31,6 +32,7 @@ const Home = () => {
           </Container>
         </div>
       </div>
+      <Footer/>
     </main >
   )
 }

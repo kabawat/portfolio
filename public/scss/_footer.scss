@@ -1,0 +1,42 @@
+footer {
+    background: #222;
+    color: #FFF;
+    margin-top: 200px;
+}
+
+.skewed-bg {
+    background: #f6880a;
+    padding: 100px 0;
+    transform: skew(0deg, -10deg);
+    margin-top: -0px;
+}
+
+.skewed-bg .content {
+    transform: skew(0deg, 10deg);
+    text-align: center;
+}
+
+.skewed-bg .content .title {
+    padding-top: 100px;
+    font-weight: normal;
+}
+
+.skewed-bg .content .text {
+    width: 60%;
+    margin: 25px auto;
+    color: #e6e6e6;
+}
+
+.footer {
+    padding-top: 50px;
+}
+
+.footer .credits {
+    text-align: center;
+    color: #666;
+}
+
+.footer .credits .link {
+    color: #f6880a;
+    text-decoration: none;
+}
