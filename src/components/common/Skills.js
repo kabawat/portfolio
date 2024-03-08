@@ -2,24 +2,24 @@ import React from 'react'
 
 const Skills = () => {
     return (
-        <dl class="skills-diagram">
-            <dt class="skill-5">MongoDB</dt>
+        <dl className="skills-diagram">
+            <dt className="skill-5">MongoDB</dt>
             <dd>5</dd>
-            <dt class="skill-10">Next.js</dt>
+            <dt className="skill-10">Next.js</dt>
             <dd>10</dd>
-            <dt class="skill-4">SCSS</dt>
+            <dt className="skill-4">SCSS</dt>
             <dd>3</dd>
-            <dt class="skill-8">Express.js</dt>
+            <dt className="skill-8">Express.js</dt>
             <dd>8</dd>
-            <dt class="skill-4">PHP</dt>
+            <dt className="skill-4">PHP</dt>
             <dd>4</dd>
-            <dt class="skill-6">JavaScript</dt>
+            <dt className="skill-6">JavaScript</dt>
             <dd>6</dd>
-            <dt class="skill-7">Node.js</dt>
+            <dt className="skill-7">Node.js</dt>
             <dd>7</dd>
-            <dt class="skill-9">React.js</dt>
+            <dt className="skill-9">React.js</dt>
             <dd>9</dd>
-            <dt class="skill-5">HTML5</dt>
+            <dt className="skill-5">HTML5</dt>
             <dd>3</dd>
         </dl>
     )

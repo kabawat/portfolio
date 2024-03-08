@@ -12,12 +12,12 @@ const Experience = () => {
                         <h2 className='text-center Experience-heading' data-aos="zoom-in" data-aos-delay="0"> Experience</h2>
                         <div className="mb-3">
                             <div className='d-flex flex-column align-items-center'>
-                                <div class="title-box"></div>
-                                <div class="title-line"></div>
+                                <div className="title-box"></div>
+                                <div className="title-line"></div>
                             </div>
                         </div>
                         <p className='text-center desc-text'>
-                            Obviously I'm a Web Developer. Experienced with all stages of the development cycle for dynamic web projects.
+                            Obviously I&apos;m a Web Developer. Experienced with all stages of the development cycle for dynamic web projects.
                         </p>
                     </Col>
                 </Row>

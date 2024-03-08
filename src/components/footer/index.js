@@ -1,18 +1,19 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
     return (
         <footer>
-            <div class="skewed-bg">
-                <div class="content">
-                    <h1 class="title">I'm Mukesh Singh Kabawat</h1>
-                    <p class="text">Web Application | Game Development</p>
+            <div className="skewed-bg">
+                <div className="content">
+                    <h1 className="title">I&apos;m Mukesh Singh Kabawat</h1>
+                    <p className="text">Web Application | Game Development</p>
                 </div>
             </div>
 
-            <footer class="footer">
-                <p class="credits">
-                    Pen by Ms Rajputana <a class="link" href="/">@Kabawat</a>
+            <footer className="footer">
+                <p className="credits">
+                    Pen by Ms Rajputana <Link className="link" href="/">@Kabawat</Link>
                 </p>
             </footer>
         </footer>
