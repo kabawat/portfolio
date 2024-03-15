@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { RiArrowUpDoubleLine } from "react-icons/ri";
+
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -32,7 +32,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <>
           <div className="scroll-top" onClick={scrollToTop}>
-           <RiArrowUpDoubleLine/>
+            <i className="bi bi-arrow-up-short"></i>
           </div>
         </>
       )}

@@ -1,10 +1,10 @@
-"use client"
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Experience from '@/components/home/Experience'
 import Skills from '@/components/home/Skills'
 import AboutSection from '@/components/home/about-senction'
 import Hero from '@/components/home/hero'
+import Image from 'next/image'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
@@ -38,3 +38,9 @@ const Home = () => {
 }
 
 export default Home
+
+// function Example(props) {
+//   return (
+//     { props.children }
+//   );
+// }
