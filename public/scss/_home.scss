@@ -318,7 +318,13 @@ header {
 }
 
 .Experience-heading {
+    text-align: center;
     font-size: 60px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+
+    }
 }
 
 .Experience-desc {
@@ -388,7 +394,26 @@ header {
         h3 {
             font-size: 40px;
         }
+
+        li {
+            padding-left: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            h3 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+            li{
+                padding-left: 22px;
+            }
+        }
     }
+
 
     input {
         display: none;
