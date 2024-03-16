@@ -237,6 +237,12 @@
 .skills-container {
     .year {
         position: relative;
+        font-size: 0.9em;
+
+        @media screen and (max-width : 768px) {
+
+            padding-top: 30px;
+        }
 
         span {
             color: #f6880a;
@@ -251,19 +257,55 @@
             width: 100px;
             height: 2px;
             border-radius: 3px;
+
+            @media screen and (max-width : 768px) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 
-    h4, h3 {
+    h4,
+    h3 {
         span {
             color: #f6880a;
             font-family: inherit;
         }
     }
-    p.company{
+
+    p.company {
         font-size: 1em;
     }
-    p.desc{
+
+    p.desc {
         font-size: 1em;
     }
+
+    p.desc-text_one {
+        font-size: 0.9em;
+    }
+}
+
+.mb_Experience {
+    @media screen and (max-width : 768px) {
+        display: flex;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .mb_exp_title {
+        @media screen and (max-width : 1199px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .mb_exp_title {
+        @media screen and (max-width : 768px) {
+            // flex-direction: row;
+            text-align: center;
+        }
+    }
+
 }

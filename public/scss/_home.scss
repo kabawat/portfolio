@@ -237,7 +237,6 @@ header {
     height: 100%;
     position: relative;
     background: url('../bg/bg-1.webp') no-repeat center center/cover;
-
     @include masking-animation;
 }
 
@@ -271,7 +270,7 @@ header {
     header {
         .logo {
             font-size: 36px;
-            
+
         }
     }
 
@@ -305,8 +304,6 @@ header {
         }
     }
 }
-
-
 
 // -------------- about ----------------
 .Experience {
