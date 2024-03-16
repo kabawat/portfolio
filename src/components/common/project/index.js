@@ -68,16 +68,25 @@ const Project = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12} className='drop-shadow imgsection' data-aos="zoom-in" data-aos-delay="100">
+                        <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12} className='drop-shadow imgsection'>
                             {
-                                curItem == 1 ? <Image src="/image/quadra.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} /> : <></>
+                                curItem == 1 ?
+                                    <div className="" data-aos="zoom-out-up" data-aos-delay="0">
+                                        <Image src="/image/quadra.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                    </div> : <></>
                             }
 
                             {
-                                curItem == 2 ? <Image src="/image/tech.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} /> : <></>
+                                curItem == 2 ? <div className="" data-aos="zoom-in" data-aos-delay="0">
+                                    <Image src="/image/tech.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                </div>
+                                    : <></>
                             }
                             {
-                                curItem == 3 ? <Image src="/image/quadra-logo.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} /> : <></>
+                                curItem == 3 ? <div className="" data-aos="zoom-in" data-aos-delay="0">
+                                    <Image src="/image/quadra-logo.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                </div>
+                                    : <></>
                             }
                         </Col>
                     </Row>
