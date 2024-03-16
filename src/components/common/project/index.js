@@ -16,6 +16,7 @@ const Project = () => {
                 setCurItem(1)
             }
         }, 4000)
+        return () => clearInterval(interval)
     }, [curItem])
     return (
         <>
