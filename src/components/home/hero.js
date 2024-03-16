@@ -9,11 +9,11 @@ const Hero = () => {
     return (
         <div className="hero-section d-flex justify-content-center pt-100 align-items-center flex-column">
             <div className="hero-intro">
-                <h2 className='text-center' data-aos="zoom-in-up" data-aos-delay="0">Hi There!</h2>
+                <strong className='text-center d-block' data-aos="zoom-in-up" data-aos-delay="0">Hi There!</strong>
                 <h1 className='text-center py-2' data-aos="zoom-in" data-aos-delay="200">Welcome To My <span>Portfolio!</span></h1>
-                <h3 className='text-center' data-aos="zoom-in-up" data-aos-delay="400">
+                <p className='text-center' data-aos="zoom-in-up" data-aos-delay="400">
                     Web Application <span>|</span> Game Development
-                </h3>
+                </p>
                 <div className="about-social" data-aos="zoom-in-up" data-aos-delay="400">
                     <div className="d-flex justify-content-center">
                         <button className={`cta ${isMedia && 'isMedia'}`} onClick={() => setIsMedia(!isMedia)}>
@@ -32,7 +32,7 @@ const Hero = () => {
                                         <Link href={item?.link} className={`social-link icon ${item?.title}`}>
                                             <span className="tooltip">{item?.title}</span>
                                             <span>
-                                                <Image src={item?.icon} alt={item?.title} width={50} height={50} />
+                                                <Image src={item?.icon} alt={"Mukesh Singh Kabawat's"+item?.title} width={50} height={50} />
                                             </span>
                                         </Link>
                                     </div>

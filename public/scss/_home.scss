@@ -109,6 +109,7 @@ header {
 
         // font-family: 'Permanent Marker', cursive;
         span {
+            font-family: inherit;
             color: #f6880a;
         }
     }
@@ -145,11 +146,11 @@ header {
         @include hero-heading-styles;
     }
 
-    h2 {
+    strong {
         @include hero-subheading-styles;
     }
 
-    h3 {
+    p {
         font-size: 40px;
         color: #fff;
         font-family: 'Belanosima', sans-serif;
@@ -166,17 +167,17 @@ header {
             font-size: 40px;
         }
 
-        h2 {
-            font-size: 30px;
+        strong {
+            font-size: 25px;
         }
 
-        h3 {
+        p {
             font-size: 20px;
         }
     }
 
     @media screen and (max-width : 425px) {
-        h3 {
+        p {
             span {
                 display: block;
                 color: transparent;
@@ -184,8 +185,8 @@ header {
             }
         }
 
-        h2 {
-            font-size: 30px;
+        strong {
+            font-size: 20px;
         }
 
         h1 {
@@ -196,6 +197,7 @@ header {
 
 .hero-intro {
     @include hero-intro-styles;
+
 }
 
 .about {
@@ -269,6 +271,7 @@ header {
     header {
         .logo {
             font-size: 36px;
+            
         }
     }
 
