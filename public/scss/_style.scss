@@ -1,66 +1,66 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    // font-family: 'Yeseva One', cursive;
-    font-family: "Roboto", sans-serif;
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+    // font-family: 'Yeseva One', cursive; 
+    font-family: "Roboto", sans-serif; 
 }
 p{
-    padding: 0px;
-    margin: 0px;
+    padding: 0px; 
+    margin: 0px; 
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+    color: inherit; 
+    text-decoration: none; 
 }
 
 body {
-    max-width: 100%;
-    overflow-x: hidden;
+    max-width: 100%; 
+    overflow-x: hidden; 
 }
 
 
 
 /*^^^^^^^^^^^^^^^^^^^^ Scroll Top ^^^^^^^^^^^^^^^^^^^^^*/
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 0px; 
 }
 
 .scroll-top {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    position: fixed;
-    bottom: 20px;
-    right: 5px;
-    z-index: 99;
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: var(--prime-ten);
-    transition: all 0.3s ease-in-out;
+    width: 35px; 
+    height: 35px; 
+    line-height: 35px; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 5px; 
+    z-index: 99; 
+    text-align: center; 
+    color: #44862f; 
+    font-size: 25px; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    background: var(--prime-ten); 
+    transition: all 0.3s ease-in-out; 
 }
 
 .scroll-top:after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    top: 100%;
-    left: 5%;
-    height: 10px;
-    width: 90%;
-    opacity: 1;
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+    position: absolute; 
+    z-index: -1; 
+    content: ""; 
+    top: 100%; 
+    left: 5%; 
+    height: 10px; 
+    width: 90%; 
+    opacity: 1; 
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%); 
 }
 
 
 /// image 
 img {
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    height: 100%; 
 }
 
 h1,
@@ -70,27 +70,27 @@ h4,
 h5,
 h6,
 a {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One', cursive; 
 
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500; 
 }
 
 .mt-100 {
-    margin-top: 100px;
+    margin-top: 100px; 
 }
 
 .mb-100 {
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
 }
 
 .pt-100 {
-    padding-top: 100px;
+    padding-top: 100px; 
 }
 
 .pb-100 {
-    padding-bottom: 100px;
+    padding-bottom: 100px; 
 }

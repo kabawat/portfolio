@@ -1,13 +1,15 @@
+"use client"
 import ScrollToTop from '@/components/common/ScrollToTop';
 import { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-circular-progressbar/dist/styles.css";
+import 'aos/dist/aos.css';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import '@/styles/globals.scss'
-import 'aos/dist/aos.css'; 
-import AOS from 'aos'; 
+import AOS from 'aos';
 
-export default function App({ Component, pageProps }) {
+export default function App() {
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -15,7 +17,6 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return <>
-    <Component {...pageProps} />
     <ScrollToTop />
   </>
 }
