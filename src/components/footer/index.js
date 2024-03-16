@@ -7,7 +7,10 @@ const Footer = () => {
             <div className="skewed-bg">
                 <div className="content">
                     <h1 className="title">I&apos;m Mukesh Singh Kabawat</h1>
-                    <p className="text">Web Application | Game Development</p>
+                    {/* <p className="text">Web Application | Game Development</p> */}
+                    <p className="text">
+                    Pathways to Progress: Innovating Tomorrow's Solutions
+                    </p>
                 </div>
             </div>
 

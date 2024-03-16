@@ -1,4 +1,5 @@
 "use client"
+import Project from '@/components/common/project'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Experience from '@/components/home/Experience'
@@ -25,14 +26,14 @@ const Home = () => {
         <div className="py-5 about">
           <Experience />
         </div>
+        <div className="home_project">
+          <Project />
+        </div>
         <div className="py-5 skills">
-          <Container>
-            <h2 className='text-center' data-aos="zoom-in-up" data-aos-delay="0">Development Skills</h2>
-            <Skills />
-          </Container>
+          <Skills />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </main >
   )
 }

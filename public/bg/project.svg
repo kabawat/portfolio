@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1002.435" height="755.253" viewBox="0 0 1002.435 755.253">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="60" y="125" width="1000.428" height="755.253" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.216" y1="0.197" x2="0.302" y2="1.294" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#0435fb"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_7941" data-name="Group 7941" transform="translate(-919.258 -847.137)">
+    <g id="Scroll_Group_6" data-name="Scroll Group 6" transform="translate(859.258 722.137)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <path id="Path_9018" data-name="Path 9018" d="M508.812,628.617c300.221,0,605.18,169.679,605.18-36.545S1199.624,67.93,899.4,67.93,43.592-146.376,4.191,186.3,208.591,628.617,508.812,628.617Z" transform="translate(0 421.541) rotate(-22)" opacity="0.071" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Path_9800" data-name="Path 9800" d="M-11128.077-11306.722c-29.582,21.786-108.992,66.716-264.254,71.3-202.479,5.979-258.393,139.5-475.821,84.048-1.647-.421-110.029-28.554-127.021,24.026-18.036,64.576,53.413,89.563,83.322,96.949,52.137,15.24,185.4,14.442,369.457-10.061,211.5-28.154,414.579-86.815,414.317-86.889" transform="translate(13048 12432)" fill="none" stroke="#fff" stroke-width="3.5"/>
+    <path id="Path_9799" data-name="Path 9799" d="M-11127.36-11316.757c-36.493,5.63-146.588,24.563-295.506,67.821-147.628,42.883-167.71,156.01-302.641,162.222-30.506,1.4-162.4-14.46-283.713,0-106.63,12.71-77.745,93.116-5.439,105.747,18.8,3.284,68.4,7.378,110.1,0,117.891-20.858,293.127-80.953,460.523-100.517,124.734-18.742,111.164,26.343,174.829,29.7,46.794,2.468,110.875-17.748,141.875-28.6" transform="translate(13048 12413)" fill="none" stroke="#fff" stroke-width="3.5" opacity="0.44"/>
+    <path id="Path_9798" data-name="Path 9798" d="M-11127.042-11305.225c-54.395,52.428-275.71,238.837-619.9,180.683-71.58-10.112-154.205,19.055-162.527,21.146-180.432,50.578-137.941,147.941-115.181,169.945s63.347,24.92,115.181,12.422,384.7-133.669,557.708-108.3c128.544,18.852,197.408,6.043,224.654-1.764" transform="translate(13048 12377)" fill="none" stroke="#0435fb" stroke-width="1" opacity="0.241"/>
+  </g>
+</svg>

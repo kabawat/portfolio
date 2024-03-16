@@ -309,3 +309,25 @@
     }
 
 }
+
+.list-item {
+    list-style-type: none;
+    /* Remove default bullet */
+    padding-left: 20px;
+    /* Add padding to give space for the image */
+    background-image: url('../image/done.png');
+    /* Set background image */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    background-position: left center;
+    /* Position image */
+    background-size: 16px 16px;
+    /* Set size of the image */
+    line-height: 20px;
+    /* Adjust line height for proper alignment */
+}
+
+.drop-shadow {
+    // filter:drop-shadow( 0px 7px 29px 0px)
+    filter: drop-shadow(2px 4px 8px hsla(0deg, 0%, 0%, 0.2))
+}
