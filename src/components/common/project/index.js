@@ -9,15 +9,15 @@ const Project = () => {
         setCurItem(value)
     }
     useEffect(() => {
-        setTimeout(() => {
+        const timeout = setTimeout(() => {
             if (curItem < 3) {
-                setCurItem(curItem + 1)
+                setCurItem(curItem + 1);
             } else {
-                setCurItem(1)
+                setCurItem(1);
             }
-        }, 4000)
-        return () => clearInterval(interval)
-    }, [curItem])
+        }, 4000);
+        return () => clearTimeout(timeout);
+    }, [curItem]); // Dependency array
     return (
         <>
             <Container>
