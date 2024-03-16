@@ -46,7 +46,7 @@ const Project = () => {
                                     Seamlessly work toge ther to fulfill project needs.
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="200" className='list-item desc-text py-2 px-4'>
-                                    Efficient project co mpletion with Quadra's platform.
+                                    Efficient project co mpletion with Quadra&apos;s platform.
                                 </li>
                             </ul>
                             <div className=" d-flex py-2 justify-content-between flex-column align-items-center" data-aos="fade-up" data-aos-delay="100">

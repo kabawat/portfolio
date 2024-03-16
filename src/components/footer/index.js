@@ -9,7 +9,7 @@ const Footer = () => {
                     <h1 className="title">I&apos;m Mukesh Singh Kabawat</h1>
                     {/* <p className="text">Web Application | Game Development</p> */}
                     <p className="text">
-                    Pathways to Progress: Innovating Tomorrow's Solutions
+                    Pathways to Progress: Innovating Tomorrow&apos;s Solutions
                     </p>
                 </div>
             </div>

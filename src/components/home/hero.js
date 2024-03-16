@@ -15,7 +15,7 @@ const Hero = () => {
                     Web Application <span>|</span> Game Development
                 </p>
                 <p className='desc text-center pt-3' data-aos="zoom-in-up" data-aos-delay="300">
-                    Pathways to Progress: Innovating Tomorrow's Solutions
+                    Pathways to Progress: Innovating Tomorrow&apos;s Solutions
                 </p>
                 <div className="about-social" data-aos="zoom-in-up" data-aos-delay="400">
                     <div className="d-flex justify-content-center">
