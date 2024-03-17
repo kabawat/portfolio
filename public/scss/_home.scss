@@ -385,10 +385,26 @@ header {
 }
 
 .home_project {
+
     .project-layout {
-        background-image: url('../bg/project.svg');
-        background-repeat: no-repeat;
         background-position: right -100px bottom;
+        background-image: url('../bg/project.svg');
+    }
+
+    .project-layout-right {
+        background-position: left -100px bottom;
+        background-image: url('../bg/project-one.svg');
+
+        @media screen and (max-width:767px) {
+            .work-container {
+                flex-direction: column-reverse
+            }
+        }
+    }
+
+    .project-layout,
+    .project-layout-right {
+        background-repeat: no-repeat;
         background-size: contain;
 
         h3 {
@@ -408,11 +424,13 @@ header {
             p {
                 text-align: center;
             }
-            li{
+
+            li {
                 padding-left: 22px;
             }
         }
     }
+
 
 
     input {
