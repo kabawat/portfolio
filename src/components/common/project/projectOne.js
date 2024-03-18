@@ -30,10 +30,10 @@ const ProjectOne = () => {
                             </p>
                             <ul className='px-0 py-3 m-0'>
                                 <li data-aos="fade-up" data-aos-delay="0" className='list-item desc-text py-2'>
-                                    Clients find and Con nect with Skilled Professionals Easily.
+                                    Clients find and Connect with Skilled Professionals Easily.
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="100" className='list-item desc-text py-2'>
-                                    Seamlessly work toge ther to fulfill project needs.
+                                    Seamlessly work together to fulfill project needs.
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="200" className='list-item desc-text py-2'>
                                     Efficient project co mpletion with Quadra&apos;s platform.
