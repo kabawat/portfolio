@@ -61,19 +61,19 @@ const ProjectOne = () => {
                             {
                                 curItem == 1 ?
                                     <div className="" data-aos="zoom-out-up" data-aos-delay="0">
-                                        <Image src="/image/quadra.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                        <Image src="/image/quadra.png" aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={1080} height={1080} />
                                     </div> : <></>
                             }
 
                             {
                                 curItem == 2 ? <div className="" data-aos="zoom-in" data-aos-delay="0">
-                                    <Image src="/image/tech.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                    <Image src="/image/tech.png" aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={1080} height={1080} />
                                 </div>
                                     : <></>
                             }
                             {
                                 curItem == 3 ? <div className="" data-aos="zoom-in" data-aos-delay="0">
-                                    <Image src="/image/quadra-logo.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                    <Image src="/image/quadra-logo.png" aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={1080} height={1080} />
                                 </div>
                                     : <></>
                             }

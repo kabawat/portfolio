@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
             <div className="skewed-bg">
                 <div className="content">
-                    <h1 className="title">I&apos;m Mukesh Singh Kabawat</h1>
+                    <h2 className="title">I&apos;m Mukesh Singh Kabawat</h2>
                     {/* <p className="text">Web Application | Game Development</p> */}
                     <p className="text">
                     Pathway to Progress: Innovating Tomorrow&apos;s Solutions

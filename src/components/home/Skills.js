@@ -31,7 +31,7 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={100} height={100} />
+                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>
@@ -56,7 +56,7 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={100} height={100} />
+                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>
@@ -82,7 +82,7 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={100} height={100} />
+                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>
@@ -108,7 +108,7 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={100} height={100} />
+                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>

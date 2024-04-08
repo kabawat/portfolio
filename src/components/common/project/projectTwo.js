@@ -27,19 +27,19 @@ const ProjectTwo = () => {
                             {
                                 curItem == 1 ?
                                     <div className="" data-aos="zoom-out-up" data-aos-delay="0">
-                                        <Image src="/image/techkilla.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                        <Image src="/image/techkilla.png" aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="kabawat" width={1080} height={1080} />
                                     </div> : <></>
                             }
 
                             {
                                 curItem == 2 ? <div className="" data-aos="zoom-in" data-aos-delay="0">
-                                    <Image src="/image/tech1.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                    <Image src="/image/tech1.png" aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="kabawat" width={1080} height={1080} />
                                 </div>
                                     : <></>
                             }
                             {
                                 curItem == 3 ? <div className="" data-aos="zoom-in" data-aos-delay="0">
-                                    <Image src="/image/tech-logo1.png" aria-label="Mukesh singh" alt="kabawat" aria-labelledby="kabawat" width={1080} height={1080} />
+                                    <Image src="/image/tech-logo1.png" aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="kabawat" width={1080} height={1080} />
                                 </div>
                                     : <></>
                             }
