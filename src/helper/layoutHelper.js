@@ -1,6 +1,7 @@
 "use client"
 import ScrollToTop from '@/components/common/ScrollToTop';
 import { useEffect } from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-circular-progressbar/dist/styles.css";
 import 'aos/dist/aos.css';
@@ -17,6 +18,7 @@ export default function App() {
   }, []);
 
   return <>
+    <SpeedInsights />
     <ScrollToTop />
   </>
 }
