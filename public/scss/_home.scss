@@ -511,3 +511,40 @@ header {
         }
     }
 }
+
+.benifit {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0px 20px;
+
+    .benifit-icon {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 2px solid #e0e0e0;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    .icon-inner {
+        font-size: 60px;
+        line-height: 1;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #e0e0e0;
+    }
+
+    .head {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 900;
+        color: #0c2c2b;
+        margin: 20px auto;
+    }
+
+    p {
+        color: #0829279f;
+    }
+}

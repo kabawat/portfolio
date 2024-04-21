@@ -12,7 +12,7 @@ const Hero = () => {
                 <strong className='text-center d-block' data-aos="zoom-in-up" data-aos-delay="0">Hi There!</strong>
                 <h1 className='text-center py-2' data-aos="zoom-in" data-aos-delay="100">Welcome To My <span>Portfolio!</span></h1>
                 <p className='text-center' data-aos="zoom-in-up" data-aos-delay="200">
-                    Web Application <span>|</span> Game Development
+                    Web Application <span>|</span> App Development
                 </p>
                 <p className='desc text-center pt-3' data-aos="zoom-in-up" data-aos-delay="300">
                     Pathway to Progress: Innovating Tomorrow&apos;s Solutions
