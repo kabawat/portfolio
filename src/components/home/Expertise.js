@@ -44,7 +44,7 @@ const Expertise = () => {
                             Web Development
                         </h5>
                         <p>
-                            Seeking a developer for your website's R&D? I'm a seasoned professional ready to take charge. Let's elevate your online presence together.
+                            Seeking a developer for your website&apos;s R&D? I&apos;m a seasoned professional ready to take charge. Let&apos;s elevate your online presence together.
                         </p>
                     </div>
                 </Col>
@@ -59,7 +59,7 @@ const Expertise = () => {
                             Mobile Development
                         </h5>
                         <p>
-                            I design and build user-friendly apps using React Native, incorporating the latest trends for Android and iOS platforms. Let's create together!
+                            I design and build user-friendly apps using React Native, incorporating the latest trends for Android and iOS platforms. Let&apos;s create together!
                         </p>
                     </div>
                 </Col>
