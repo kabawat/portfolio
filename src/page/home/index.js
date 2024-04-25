@@ -17,22 +17,22 @@ const Home = () => {
   return (
     <main>
       <div className="main">
-        <div className="main-container">
+        <div className="main-container" id='home'>
           <Header />
           <div className="hero">
             <Hero />
           </div>
         </div>
-        <div className='py-5 about-masking'>
+        <div className='py-5 about-masking' id='about'>
           <AboutSection />
         </div>
-        <div className="py-5 about">
+        <div className="py-5 about" >
           <Experience />
         </div>
         <div className="home_project">
           <Project />
         </div>
-        <div className="py-5 skills">
+        <div className="py-5 skills" id='skill'>
           <Skills />
         </div>
         <div className="py-5 skills">
@@ -41,7 +41,7 @@ const Home = () => {
         <div className="Solution py-5">
           <Solution />
         </div>
-        <div className="Contect py-5">
+        <div className="Contect py-5" id="Contect">
           <Contect />
         </div>
       </div>

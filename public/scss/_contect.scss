@@ -10,6 +10,10 @@
         border-radius: 10px;
         width: 80%;
 
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+
         .form_heading {
             font-weight: bold;
             font-size: 20px;
@@ -81,6 +85,10 @@
     background: #fff;
     margin-top: 35px;
     cursor: pointer;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
 
     .title {
         font-weight: bold;

@@ -12,10 +12,6 @@ const navList = [
         link: '/'
     },
     {
-        title: 'galary',
-        link: '/'
-    },
-    {
         title: 'skills',
         link: '/'
     },

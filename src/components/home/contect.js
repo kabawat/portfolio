@@ -13,10 +13,10 @@ const Contect = () => {
             <Row>
                 <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12} className='py-5'>
                     <CommanHeading align="left" isLine={false} title={<> <span> Let&apos;s Chat.</span> <br /> Tell me about your <br /> project</>} />
-                    <p className='desc-text'>
+                    <p className='desc-text' data-aos="zoom-in">
                         Let&apos;s collaborate, blend our ideas, and weave something wonderful, a creation that reflects our combined creativity and unique perspectives.
                     </p>
-                    <div className="d-flex">
+                    <div className="d-flex" data-aos="zoom-in-up">
                         <div className='email_card d-flex align-items-center' onClick={handleSendEmail}>
                             <div className="icon">
                                 <MdOutlineEmail />
@@ -33,7 +33,7 @@ const Contect = () => {
                     </div>
                 </Col>
                 <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12}>
-                    <div className="d-flex justify-content-center">
+                    <div className="d-flex justify-content-center" data-aos="zoom-in-up">
                         <div className="form">
                             <div className='form_heading'>
                                 Send us a message 🚀
