@@ -12,9 +12,9 @@ const Contect = () => {
         <Container>
             <Row>
                 <Col className='py-5'>
-                    <CommanHeading align="left" isLine={false} title={<> <span> Let's Chat.</span> <br /> Tell me about your <br /> project</>} />
+                    <CommanHeading align="left" isLine={false} title={<> <span> Let&apos;s Chat.</span> <br /> Tell me about your <br /> project</>} />
                     <p className='desc-text'>
-                        Let's collaborate, blend our ideas, and weave something wonderful, a creation that reflects our combined creativity and unique perspectives.
+                        Let&apos;s collaborate, blend our ideas, and weave something wonderful, a creation that reflects our combined creativity and unique perspectives.
                     </p>
                     <div className="d-flex">
                         <div className='email_card d-flex align-items-center' onClick={handleSendEmail}>
