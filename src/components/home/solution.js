@@ -22,7 +22,7 @@ const Solution = () => {
                     </div>
                     <div className='small_heading text-center py-2' data-aos="zoom-in">App Development</div>
                     <p className='desc-text text-center' data-aos="zoom-out">
-                        Delivering exceptional IT solutions. Let's meet your web needs with excellence and precision. Join us for unparalleled service and quality.
+                        Delivering exceptional IT solutions. Let&apos;s meet your web needs with excellence and precision. Join us for unparalleled service and quality.
                     </p>
                 </Col>
                 <Col className='mt-5' xxl={4} xl={4} lg={4} md={4} sm={12} xs={12}>
