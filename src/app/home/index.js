@@ -7,6 +7,7 @@ import Expertise from '@/components/home/Expertise'
 import Skills from '@/components/home/Skills'
 import AboutSection from '@/components/home/about-senction'
 import Hero from '@/components/home/hero'
+import Solution from '@/components/home/solution'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
@@ -35,6 +36,9 @@ const Home = () => {
         </div>
         <div className="py-5 skills">
           <Expertise />
+        </div>
+        <div className="Solution">
+          <Solution />
         </div>
       </div>
       <Footer />

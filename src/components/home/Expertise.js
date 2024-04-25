@@ -17,48 +17,48 @@ const Expertise = () => {
                     </p>
                 </Col>
             </Row>
-            <Row className="py-4">
-                <Col>
+            <Row>
+                <Col xxl={4} xl={4} lg={4} md={4} sm={12} xs={12} className="py-4">
                     <div className='benifit'>
-                        <div className='benifit-icon'>
+                        <div className='benifit-icon' data-aos="zoom-in-up">
                             <div className='icon-inner d-flex align-items-center justify-content-center' style={{ color: '#f6880a' }}>
                                 <MdOutlineDesignServices />
                             </div>
                         </div>
-                        <h5 className='head'>
+                        <h5 className='head' data-aos="zoom-in" data-aos-delay="0">
                             UX & UI Design
                         </h5>
-                        <p>
+                        <p data-aos="zoom-out" data-aos-delay="0">
                             Ensuring captivating UI/UX, clear and innovative. My sleek, precise designs deliver compelling messages, effortlessly capturing attention.
                         </p>
                     </div>
                 </Col>
-                <Col>
+                <Col xxl={4} xl={4} lg={4} md={4} sm={12} xs={12} className="py-4">
                     <div className='benifit'>
-                        <div className='benifit-icon'>
+                        <div className='benifit-icon' data-aos="zoom-in-up">
                             <div className='icon-inner d-flex align-items-center justify-content-center' style={{ color: '#4783c8' }}>
                                 <FaLaptopCode />
                             </div>
                         </div>
-                        <h5 className='head'>
+                        <h5 className='head' data-aos="zoom-in" data-aos-delay="0">
                             Web Development
                         </h5>
-                        <p>
+                        <p data-aos="zoom-out" data-aos-delay="0">
                             Seeking a developer for your website&apos;s R&D? I&apos;m a seasoned professional ready to take charge. Let&apos;s elevate your online presence together.
                         </p>
                     </div>
                 </Col>
-                <Col>
+                <Col xxl={4} xl={4} lg={4} md={4} sm={12} xs={12} className="py-4">
                     <div className='benifit'>
-                        <div className='benifit-icon'>
+                        <div className='benifit-icon' data-aos="zoom-in-up">
                             <div className='icon-inner d-flex align-items-center justify-content-center' style={{ color: '#07929f' }}>
                                 <TbDeviceMobileCode />
                             </div>
                         </div>
-                        <h5 className='head'>
+                        <h5 className='head' data-aos="zoom-in" data-aos-delay="0">
                             Mobile Development
                         </h5>
-                        <p>
+                        <p data-aos="zoom-out" data-aos-delay="0">
                             I design and build user-friendly apps using React Native, incorporating the latest trends for Android and iOS platforms. Let&apos;s create together!
                         </p>
                     </div>

@@ -327,6 +327,21 @@ header {
     }
 }
 
+.Experience-sub-heading {
+    text-align: center;
+    font-size: 40px;
+
+    span {
+        font-family: inherit;
+        color: #f6880a;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+
+    }
+}
+
 .Experience-desc {
     font-size: 20px;
 }
@@ -546,5 +561,30 @@ header {
 
     p {
         color: #0829279f;
+    }
+}
+
+.solution_icon {
+    width: 100px;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.small_heading {
+    font-weight: bold;
+    color: #0c2c2b;
+    font-size: 21px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.tech_image {
+    width: 100%;
+    margin: auto;
+
+    @media screen and (max-width:768px) {
+        width: 60%;
     }
 }
