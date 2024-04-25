@@ -6,6 +6,7 @@ import Experience from '@/components/home/Experience'
 import Expertise from '@/components/home/Expertise'
 import Skills from '@/components/home/Skills'
 import AboutSection from '@/components/home/about-senction'
+import Contect from '@/components/home/contect'
 import Hero from '@/components/home/hero'
 import Solution from '@/components/home/solution'
 import React from 'react'
@@ -37,8 +38,11 @@ const Home = () => {
         <div className="py-5 skills">
           <Expertise />
         </div>
-        <div className="Solution">
+        <div className="Solution py-5">
           <Solution />
+        </div>
+        <div className="Contect py-5">
+          <Contect />
         </div>
       </div>
       <Footer />

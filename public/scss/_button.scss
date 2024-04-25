@@ -1,0 +1,35 @@
+.send_button {
+    background-color: #ffffff00;
+    color: #f6880a;
+    // width: 8.5em;
+    height: 2.9em;
+    border: #f6880a 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.send_button:hover {
+    background-color: #f6880a;
+    cursor: pointer;
+    color: #fff;
+}
+
+.send_button svg {
+    width: 1.6em;
+    // margin: -0.2em 0.8em 1em;
+    // position: absolute;
+
+    // display: flex;
+    transition: all 0.2s ease;
+}
+
+.send_button:hover svg {
+    transform: translateX(5px);
+}
+
+.text {
+    margin-left: 10px;
+}
