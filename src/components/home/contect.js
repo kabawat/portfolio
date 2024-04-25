@@ -11,7 +11,7 @@ const Contect = () => {
     return (
         <Container>
             <Row>
-                <Col className='py-5'>
+                <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12} className='py-5'>
                     <CommanHeading align="left" isLine={false} title={<> <span> Let&apos;s Chat.</span> <br /> Tell me about your <br /> project</>} />
                     <p className='desc-text'>
                         Let&apos;s collaborate, blend our ideas, and weave something wonderful, a creation that reflects our combined creativity and unique perspectives.
@@ -32,7 +32,7 @@ const Contect = () => {
                         </div>
                     </div>
                 </Col>
-                <Col>
+                <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12}>
                     <div className="d-flex justify-content-center">
                         <div className="form">
                             <div className='form_heading'>
