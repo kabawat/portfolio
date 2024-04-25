@@ -38,35 +38,35 @@ const Contect = () => {
                             <div className='form_heading'>
                                 Send us a message 🚀
                             </div>
-                            <div class="group">
-                                <div class="form_control">
-                                    <input class="input input-alt" placeholder="Full Name" required="" type="text" />
-                                    <span class="input-border input-border-alt"></span>
+                            <div className="group">
+                                <div className="form_control">
+                                    <input className="input input-alt" placeholder="Full Name" required="" type="text" />
+                                    <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
-                            <div class="group">
-                                <div class="form_control">
-                                    <input class="input input-alt" placeholder="Email Address" required="" type="text" />
-                                    <span class="input-border input-border-alt"></span>
+                            <div className="group">
+                                <div className="form_control">
+                                    <input className="input input-alt" placeholder="Email Address" required="" type="text" />
+                                    <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
-                            <div class="group">
-                                <div class="form_control">
-                                    <input class="input input-alt" placeholder="Subject" required="" type="text" />
-                                    <span class="input-border input-border-alt"></span>
+                            <div className="group">
+                                <div className="form_control">
+                                    <input className="input input-alt" placeholder="Subject" required="" type="text" />
+                                    <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
-                            <div class="group">
-                                <div class="form_control">
-                                    <textarea class="input input-alt" placeholder="Tell me more about your project" required="" type="text" />
-                                    <span class="input-border input-border-alt"></span>
+                            <div className="group">
+                                <div className="form_control">
+                                    <textarea className="input input-alt" placeholder="Tell me more about your project" required="" type="text" />
+                                    <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
-                            <button class="send_button mt-4 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <button className="send_button mt-4 d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
                                 </svg>
-                                <div class="text">Send Message</div>
+                                <div className="text">Send Message</div>
                             </button>
                         </div>
                     </div>
