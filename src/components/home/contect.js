@@ -1,10 +1,43 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import SubHeading from '@/components/common/sub_heading'
 import CommanHeading from '@/components/common/comman_heading'
 import { MdOutlineEmail } from "react-icons/md";
 import { useRouter } from 'next/navigation';
+import axios from 'axios'
 const Contect = () => {
+    const formInit = {
+        "name": "",
+        "email": "",
+        "subject": "",
+        "messages": ""
+    }
+    const [formData, setFormData] = useState(formInit)
+    const [message, setMessage] = useState('')
+    const [error, setError] = useState('')
+    const handalChange = ({ target }) => {
+        const { name, value } = target
+        setFormData({
+            ...formData,
+            [name]: value
+        })
+    }
+    const handalSubmit = async () => {
+        try {
+            const { data } = await axios.post('/api/contact', formData)
+            setMessage(data.message)
+            setTimeout(() => {
+                setMessage('')
+            }, 5000)
+            setFormData(formInit)
+        } catch (error) {
+            setError(error?.response?.data?.error || error?.message)
+            setTimeout(() => {
+                setError('')
+            }, 5000)
+        }
+    }
     const handleSendEmail = () => {
         window.open('https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGMvkMhgHxzsdVKhCLLCfDxfQxTfMrsvzMFwsHgfmPbCPxwtnKSLdhnWxFPgvHMKMxfqbbh');
     };
@@ -40,34 +73,36 @@ const Contect = () => {
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <input className="input input-alt" placeholder="Full Name" required="" type="text" />
+                                    <input onChange={handalChange} name='name' value={formData?.name} className="input input-alt" placeholder="Full Name" required="" type="text" />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <input className="input input-alt" placeholder="Email Address" required="" type="text" />
+                                    <input onChange={handalChange} name='email' value={formData?.email} className="input input-alt" placeholder="Email Address" required="" type="text" />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <input className="input input-alt" placeholder="Subject" required="" type="text" />
+                                    <input onChange={handalChange} name='subject' value={formData?.subject} className="input input-alt" placeholder="Subject" required="" type="text" />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <textarea className="input input-alt" placeholder="Tell me more about your project" required="" type="text" />
+                                    <textarea onChange={handalChange} name='messages' value={formData?.messages} className="input input-alt" placeholder="Tell me more about your project" required="" type="text" />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
-                            <button className="send_button mt-4 d-flex align-items-center justify-content-center">
+                            <button onClick={handalSubmit} className="send_button mt-4 d-flex align-items-center justify-content-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
                                 </svg>
                                 <div className="text">Send Message</div>
                             </button>
+                            {error ? <div className="text-danger">{error}</div> : <></>}
+                            {message ? <div className="text-success text-wrap mt-2"> {message}</div> : <></>}
                         </div>
                     </div>
                 </Col>
