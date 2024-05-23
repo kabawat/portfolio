@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+export default async function handler(req, res) {
     if (req.method === "POST") {
         try {
             const { name, email, subject, messages } = req.body;
@@ -15,8 +15,12 @@ export default function handler(req, res) {
             }
 
             // If all validations pass, proceed with the operation
-            sendNotification('Success', name, req.body, 'success');
-            res.status(200).json({ message: 'Hey there! Your message has been successfully submitted. Expect a reply soon! 🚀' });
+            const isSended = await sendNotification('Success', name, req.body, 'success');
+            if (isSended.status) {
+                res.status(200).json({ message: 'Hey there! Your message has been successfully submitted. Expect a reply soon! 🚀' });
+            } else {
+                res.status(200).json({ message: isSended?.message });
+            }
         } catch (error) {
             // Let's add some humor to the error messages
             const funnyErrorMessages = {
@@ -42,9 +46,9 @@ const colors = {
     warning: "#FFA500" // Orange
 };
 
-function sendNotification(error, client, payload, type = 'success') {
+async function sendNotification(error, client, payload, type = 'success') {
     const color = colors[type] || colors.error; // Default to error color if type is not recognized
-    var message = "";
+    let message = "";
     if (error != null && error != undefined) {
         if (typeof (error) === 'string') {
             // message += "```\n" + error + "\n```";
@@ -77,18 +81,31 @@ function sendNotification(error, client, payload, type = 'success') {
 
     const headers = { "Content-Type": "application/json" };
 
-    fetch('https://hooks.slack.com/services/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', {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(formattedMessage),
-    }).then((response) => {
+    try {
+        const response = await fetch('https://hooks.slack.com/services/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', {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(formattedMessage),
+        });
+
         if (!response.ok) {
             console.error(`Failed to send ${type} notification. Status code: ${response.status}`);
+            return {
+                status: false,
+                message: `Failed to send ${type} notification. Status code: ${response.status}`
+            };
         } else {
             console.log(`${type} notification sent successfully.`);
-            console.log("Response:", response.text());
+            console.log("Response:", await response.text());
+            return {
+                status: true,
+            };
         }
-    }).catch((error) => {
+    } catch (error) {
         console.error(`Error sending ${type} notification:`, error);
-    });
+        return {
+            status: false,
+            message: `Error sending ${type} notification: ${error?.message}`
+        };
+    }
 }
