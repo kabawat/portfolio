@@ -15,12 +15,8 @@ export default async function handler(req, res) {
             }
 
             // If all validations pass, proceed with the operation
-            const isSended = await sendNotification('Success', name, req.body, 'success');
-            if (isSended.status) {
-                res.status(200).json({ message: 'Hey there! Your message has been successfully submitted. Expect a reply soon! 🚀' });
-            } else {
-                res.status(200).json({ message: isSended?.message });
-            }
+            await sendNotification('Success', name, req.body, 'success');
+            res.status(200).json({ message: 'Hey there! Your message has been successfully submitted. Expect a reply soon! 🚀' });
         } catch (error) {
             // Let's add some humor to the error messages
             const funnyErrorMessages = {
