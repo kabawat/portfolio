@@ -32,12 +32,12 @@ const Hero = () => {
                             {
                                 media?.map((item, index) => {
                                     return <div className='list' key={index} style={{ transitionDelay: isMedia ? `${index * 0.1}s` : '0s' }}>
-                                        <Link href={item?.link} className={`social-link icon ${item?.title}`}>
+                                        <a href={item?.link} className={`social-link icon ${item?.title}`} target='_blank'>
                                             <span className="tooltip">{item?.title}</span>
                                             <span>
                                                 <Image src={item?.icon} alt={"Mukesh Singh Kabawat's" + item?.title} width={50} height={50} />
                                             </span>
-                                        </Link>
+                                        </a>
                                     </div>
                                 })
                             }
