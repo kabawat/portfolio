@@ -31,7 +31,15 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
+                        <Image 
+                            src={item?.icon} 
+                            alt={`${item.title} skill icon - Mukesh Singh Kabawat Full Stack Developer`}
+                            width={100} 
+                            height={100}
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                        />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>
@@ -56,7 +64,15 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
+                        <Image 
+                            src={item?.icon} 
+                            alt={`${item.title} skill icon - Mukesh Singh Kabawat Full Stack Developer`}
+                            width={100} 
+                            height={100}
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                        />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>
@@ -82,7 +98,15 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
+                        <Image 
+                            src={item?.icon} 
+                            alt={`${item.title} skill icon - Mukesh Singh Kabawat Full Stack Developer`}
+                            width={100} 
+                            height={100}
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                        />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>
@@ -108,7 +132,15 @@ const Skills = () => {
                   return <SwiperSlide style={{ background: item?.bg }} key={keys}>
                     <div className='skills-info'>
                       <div className='skills-icon'>
-                        <Image src={item?.icon} aria-label="Mukesh singh kabawat, Full Stack Developer" alt="Mukesh singh kabawat, Full Stack Developer" aria-labelledby="Mukesh singh kabawat, Full Stack Developer" width={100} height={100} />
+                        <Image 
+                            src={item?.icon} 
+                            alt={`${item.title} skill icon - Mukesh Singh Kabawat Full Stack Developer`}
+                            width={100} 
+                            height={100}
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                        />
                       </div>
                       <div className='skills-title'>{item.title}</div>
                     </div>

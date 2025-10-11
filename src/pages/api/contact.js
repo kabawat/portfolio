@@ -78,7 +78,8 @@ async function sendNotification(error, client, payload, type = 'success') {
     const headers = { "Content-Type": "application/json" };
 
     try {
-        const response = await fetch('https://hooks.slack.com/services/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', {
+        const webhookUrl = process.env.SLACK_WEBHOOK_URL || 'https://hooks.slack.com/services/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';
+        const response = await fetch(webhookUrl, {
             method: "POST",
             headers: headers,
             body: JSON.stringify(formattedMessage),
