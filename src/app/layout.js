@@ -117,17 +117,6 @@ export const metadata = {
   category: 'technology',
   classification: 'Portfolio Website',
   referrer: 'origin-when-cross-origin',
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#317EFB' },
-    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' },
-  ],
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32' },
@@ -137,6 +126,18 @@ export const metadata = {
       { url: '/apple-touch-icon.png', sizes: '180x180' },
     ],
   },
+};
+
+export const viewport = {
+  colorScheme: 'light dark',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#317EFB' },
+    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({ children }) {

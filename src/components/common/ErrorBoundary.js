@@ -30,7 +30,7 @@ class ErrorBoundary extends React.Component {
           <div className="error-content">
             <h2>Oops! Something went wrong</h2>
             <p>
-              We're sorry, but something unexpected happened. Please try refreshing the page.
+              We&apos;re sorry, but something unexpected happened. Please try refreshing the page.
             </p>
             <button 
               onClick={() => window.location.reload()}

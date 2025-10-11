@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const HowWeDo = () => {
     return (
@@ -6,7 +7,7 @@ const HowWeDo = () => {
             <section className="how-we-do-area">
                 <div className="custom-container">
                     <div className="custom-row">
-                        {/* <img src="/assets/how_we_do/bg-shape-1.svg" alt="Shape" className="how-we-do-bg" /> */}
+                        {/* <Image src="/assets/how_we_do/bg-shape-1.svg" alt="Shape" className="how-we-do-bg" width={300} height={300} /> */}
                         <div className="how-we-do-left-content">
                             <div className="top">
                                 <h5 className="section-subtitle">Our Model</h5>
@@ -26,7 +27,7 @@ const HowWeDo = () => {
                                     <div className="line-shape"></div>
 
                                     <div className="how-we-do-icon">
-                                        <img src="/assets/how_we_do/hwd-icon-1.svg" alt="How we do" />
+                                        <Image src="/assets/how_we_do/hwd-icon-1.svg" alt="How we do" width={64} height={64} />
                                     </div>
                                     <div className="how-we-do-content">
                                         <h4>Brainstroming</h4>
@@ -39,7 +40,7 @@ const HowWeDo = () => {
                                     <div className="line-shape"></div>
 
                                     <div className="how-we-do-icon">
-                                        <img src="/assets/how_we_do/hwd-icon-2.svg" alt="How we do" />
+                                        <Image src="/assets/how_we_do/hwd-icon-2.svg" alt="How we do" width={64} height={64} />
                                     </div>
                                     <div className="how-we-do-content">
                                         <h4>Product</h4>
@@ -52,7 +53,7 @@ const HowWeDo = () => {
                                     <div className="line-shape"></div>
 
                                     <div className="how-we-do-icon">
-                                        <img src="/assets/how_we_do/hwd-icon-3.svg" alt="How we do" />
+                                        <Image src="/assets/how_we_do/hwd-icon-3.svg" alt="How we do" width={64} height={64} />
                                     </div>
                                     <div className="how-we-do-content">
                                         <h4>Front-End</h4>
@@ -68,7 +69,7 @@ const HowWeDo = () => {
                                     <div className="line-shape"></div>
 
                                     <div className="how-we-do-icon">
-                                        <img src="/assets/how_we_do/hwd-icon-4.svg" alt="How we do" />
+                                        <Image src="/assets/how_we_do/hwd-icon-4.svg" alt="How we do" width={64} height={64} />
                                     </div>
                                     <div className="how-we-do-content">
                                         <h4>SEO</h4>
@@ -81,7 +82,7 @@ const HowWeDo = () => {
                                     <div className="line-shape"></div>
 
                                     <div className="how-we-do-icon">
-                                        <img src="/assets/how_we_do/hwd-icon-5.svg" alt="How we do" />
+                                        <Image src="/assets/how_we_do/hwd-icon-5.svg" alt="How we do" width={64} height={64} />
                                     </div>
                                     <div className="how-we-do-content">
                                         <h4>Back-End</h4>
@@ -97,7 +98,7 @@ const HowWeDo = () => {
                                     <div className="line-shape"></div>
 
                                     <div className="how-we-do-icon">
-                                        <img src="/assets/how_we_do/hwd-icon-6.svg" alt="How we do" />
+                                        <Image src="/assets/how_we_do/hwd-icon-6.svg" alt="How we do" width={64} height={64} />
                                     </div>
                                     <div className="how-we-do-content">
                                         <h4>Digital</h4>
