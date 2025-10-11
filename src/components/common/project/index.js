@@ -3,6 +3,7 @@ import ProjectOne from './projectOne'
 import Heading from '../heading'
 import { Col, Container, Row } from 'react-bootstrap'
 import ProjectTwo from './projectTwo'
+import ProjectThree from './projectThree'
 
 const Project = () => {
     return (
@@ -19,6 +20,7 @@ const Project = () => {
             </Container>
             <ProjectOne />
             <ProjectTwo />
+            <ProjectThree />
         </>
     )
 }

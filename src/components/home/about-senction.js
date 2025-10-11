@@ -27,10 +27,28 @@ const AboutSection = () => {
                 <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
                     <div className="about p-5">
                         <div className="about-back" data-aos="zoom-in-up" data-aos-delay="100">
-                            <Image alt='Mukesh singh kabawat, Full Stack Developer' src="/bg/bg-2.svg" width={1920} height={1080} />
+                            <Image 
+                                alt='Professional background design for Mukesh Singh Kabawat portfolio - Modern tech illustration' 
+                                title='Portfolio Background Design'
+                                src="/bg/bg-2.svg" 
+                                width={1920} 
+                                height={1080}
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                            />
                         </div>
                         <div className="p-3" data-aos="zoom-in" data-aos-delay="300">
-                            <Image alt='Mukesh singh kabawat, Full Stack Developer' src="/masking/mk.png" width={1920} height={1080} />
+                            <Image 
+                                alt='Professional headshot of Mukesh Singh Kabawat - Full Stack Developer and AI Engineer from Rajasthan, India' 
+                                title='Mukesh Singh Kabawat - Professional Profile Photo'
+                                src="/masking/mk.png" 
+                                width={1920} 
+                                height={1080}
+                                priority
+                                placeholder="blur"
+                                blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmZmZmZmIiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8L3N2Zz4K"
+                            />
                         </div>
 
                     </div>

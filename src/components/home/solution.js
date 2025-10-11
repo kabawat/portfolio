@@ -18,7 +18,15 @@ const Solution = () => {
                     <Row className='align-items-center'>
                         <Col className='mt-5' xxl={4} xl={4} lg={4} md={4} sm={12} xs={12}>
                             <div className='solution_icon' data-aos="zoom-in-up">
-                                <Image src="/icon/mobile.png" width={400} height={400} />
+                                <Image 
+                                    src="/icon/mobile.png" 
+                                    alt="Mobile App Development icon - Mukesh Singh Kabawat"
+                                    width={400} 
+                                    height={400}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                                />
                             </div>
                             <div className='small_heading text-center py-2' data-aos="zoom-in">App Development</div>
                             <p className='desc-text text-center' data-aos="zoom-out">
@@ -27,12 +35,28 @@ const Solution = () => {
                         </Col>
                         <Col className='mt-5' xxl={4} xl={4} lg={4} md={4} sm={12} xs={12}>
                             <div className='tech_image' data-aos="zoom-in">
-                                <Image src="/icon/tech.png" width={1024} height={1024} />
+                                <Image 
+                                    src="/icon/tech.png" 
+                                    alt="Technology solutions icon - Mukesh Singh Kabawat"
+                                    width={1024} 
+                                    height={1024}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                                />
                             </div>
                         </Col>
                         <Col className='mt-5' xxl={4} xl={4} lg={4} md={4} sm={12} xs={12}>
                             <div className='solution_icon' data-aos="zoom-in-up">
-                                <Image src="/icon/web.png" width={400} height={400} />
+                                <Image 
+                                    src="/icon/web.png" 
+                                    alt="Web Development icon - Mukesh Singh Kabawat"
+                                    width={400} 
+                                    height={400}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZjY4OGZhIiBmaWxsLW9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K"
+                                />
                             </div>
                             <div className='small_heading text-center py-2' data-aos="zoom-in">Web Development</div>
                             <p className='desc-text text-center' data-aos="zoom-out">

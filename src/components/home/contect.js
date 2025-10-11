@@ -73,36 +73,99 @@ const Contect = () => {
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <input onChange={handalChange} name='name' value={formData?.name} className="input input-alt" placeholder="Full Name" required="" type="text" />
+                                    <input 
+                                        onChange={handalChange} 
+                                        name='name' 
+                                        value={formData?.name} 
+                                        className="input input-alt" 
+                                        placeholder="Full Name" 
+                                        required 
+                                        type="text"
+                                        aria-label="Enter your full name"
+                                        aria-describedby="name-help"
+                                    />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <input onChange={handalChange} name='email' value={formData?.email} className="input input-alt" placeholder="Email Address" required="" type="text" />
+                                    <input 
+                                        onChange={handalChange} 
+                                        name='email' 
+                                        value={formData?.email} 
+                                        className="input input-alt" 
+                                        placeholder="Email Address" 
+                                        required 
+                                        type="email"
+                                        aria-label="Enter your email address"
+                                        aria-describedby="email-help"
+                                    />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <input onChange={handalChange} name='subject' value={formData?.subject} className="input input-alt" placeholder="Subject" required="" type="text" />
+                                    <input 
+                                        onChange={handalChange} 
+                                        name='subject' 
+                                        value={formData?.subject} 
+                                        className="input input-alt" 
+                                        placeholder="Subject" 
+                                        required 
+                                        type="text"
+                                        aria-label="Enter message subject"
+                                        aria-describedby="subject-help"
+                                    />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="form_control">
-                                    <textarea onChange={handalChange} name='messages' value={formData?.messages} className="input input-alt" placeholder="Tell me more about your project" required="" type="text" />
+                                    <textarea 
+                                        onChange={handalChange} 
+                                        name='messages' 
+                                        value={formData?.messages} 
+                                        className="input input-alt" 
+                                        placeholder="Tell me more about your project" 
+                                        required
+                                        aria-label="Enter your message"
+                                        aria-describedby="message-help"
+                                        rows="4"
+                                    />
                                     <span className="input-border input-border-alt"></span>
                                 </div>
                             </div>
-                            <button onClick={handalSubmit} className="send_button mt-4 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                            <button 
+                                onClick={handalSubmit} 
+                                className="send_button mt-4 d-flex align-items-center justify-content-center"
+                                aria-label="Send message to Mukesh Singh Kabawat"
+                                type="button"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6" aria-hidden="true">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
                                 </svg>
                                 <div className="text">Send Message</div>
                             </button>
-                            {error ? <div className="text-danger">{error}</div> : <></>}
-                            {message ? <div className="text-success text-wrap mt-2"> {message}</div> : <></>}
+                            {error ? (
+                                <div 
+                                    className="text-danger" 
+                                    role="alert" 
+                                    aria-live="polite"
+                                    aria-label="Error message"
+                                >
+                                    {error}
+                                </div>
+                            ) : null}
+                            {message ? (
+                                <div 
+                                    className="text-success text-wrap mt-2" 
+                                    role="alert" 
+                                    aria-live="polite"
+                                    aria-label="Success message"
+                                >
+                                    {message}
+                                </div>
+                            ) : null}
                         </div>
                     </div>
                 </Col>
