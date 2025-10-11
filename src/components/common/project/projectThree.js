@@ -27,20 +27,20 @@ const ProjectThree = () => {
                         <Col xxl={6} xl={6} lg={6} md={6} sm={12} xs={12} className='py-5'>
                             <h3 data-aos="fade-up" data-aos-delay="0">TaxSpanner</h3>
                             <p data-aos="fade-up" data-aos-delay="100" className='desc-text'>
-                                TaxSpanner is India's leading online tax filing platform, simplifying income tax return preparation and e-filing for individuals and businesses. Experience seamless tax compliance with our user-friendly interface.
+                                TaxSpanner is India&apos;s leading online tax filing platform, simplifying income tax return preparation and e-filing for individuals and businesses. Experience seamless tax compliance with our user-friendly interface.
                             </p>
                             <ul className='px-0 py-3 m-0'>
                                 <li data-aos="fade-up" data-aos-delay="0" className='list-item desc-text py-2'>
                                     Individual Tax Return (ITR) Filing
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="100" className='list-item desc-text py-2'>
-                                    Business Tax Solutions & Compliance
+                                    Business Tax Solutions &amp; Compliance
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="200" className='list-item desc-text py-2'>
-                                    GST & TDS Compliance Services
+                                    GST &amp; TDS Compliance Services
                                 </li>
                                 <li data-aos="fade-up" data-aos-delay="200" className='list-item desc-text py-2'>
-                                    Bookkeeping & Audit Services
+                                    Bookkeeping &amp; Audit Services
                                 </li>
                             </ul>
                             <div className=" d-flex py-2 justify-content-between flex-column align-items-center" data-aos="fade-up" data-aos-delay="100">

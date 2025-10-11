@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 // Animated Text Component
 function AnimatedText({ children, delay = 0, className = '' }) {
@@ -26,6 +26,9 @@ function ParticleSystem() {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 })
   const [isMouseActive, setIsMouseActive] = useState(false)
   const [ripples, setRipples] = useState([])
+  const ripplesRef = useRef([])
+  const mousePositionRef = useRef({ x: 50, y: 50 })
+  const isMouseActiveRef = useRef(false)
   
   useEffect(() => {
     const total = 200
@@ -76,11 +79,13 @@ function ParticleSystem() {
       const y = ((e.clientY - rect.top) / rect.height) * 100
       
       setMousePosition({ x, y })
+      mousePositionRef.current = { x, y }
       setIsMouseActive(true)
+      isMouseActiveRef.current = true
       
       // Emit a new ripple on movement
-      setRipples(prev => [
-        ...prev.slice(-8),
+      const newRipples = [
+        ...ripplesRef.current.slice(-8),
         {
           id: Date.now() + Math.random(),
           x,
@@ -88,47 +93,53 @@ function ParticleSystem() {
           radius: 0,
           strength: 1, // 0..1
         }
-      ])
+      ]
+      ripplesRef.current = newRipples
+      setRipples(newRipples)
       
       clearTimeout(mouseTimeout)
       mouseTimeout = setTimeout(() => {
         setIsMouseActive(false)
+        isMouseActiveRef.current = false
       }, 200)
     }
 
     const handleMouseEnter = () => {
       setIsMouseActive(true)
+      isMouseActiveRef.current = true
       clearTimeout(mouseTimeout)
     }
 
     const handleMouseLeave = () => {
       setIsMouseActive(false)
+      isMouseActiveRef.current = false
       clearTimeout(mouseTimeout)
     }
 
     const animateParticles = () => {
       // Evolve ripples (expand + decay)
-      setRipples(prevRipples => prevRipples
+      const evolvedRipples = ripplesRef.current
         .map(r => ({
           ...r,
           radius: r.radius + 1.2, // expansion speed per frame
           strength: r.strength * 0.97 // decay per frame
         }))
         .filter(r => r.strength > 0.05 && r.radius < 120)
-      )
+      ripplesRef.current = evolvedRipples
+      setRipples(evolvedRipples)
 
       setParticles(prevParticles => 
         prevParticles.map(particle => {
           // Water-like physics simulation
-          const dx = mousePosition.x - particle.x
-          const dy = mousePosition.y - particle.y
+          const dx = mousePositionRef.current.x - particle.x
+          const dy = mousePositionRef.current.y - particle.y
           const distance = Math.sqrt(dx * dx + dy * dy)
           
           // Calculate forces
           let forceX = 0
           let forceY = 0
           
-          if (isMouseActive && distance < 40) {
+          if (isMouseActiveRef.current && distance < 40) {
             // Mouse disturbance force (like dropping stone in water)
             const mouseForce = (40 - distance) / 40
             const angle = Math.atan2(dy, dx)
@@ -139,9 +150,9 @@ function ParticleSystem() {
           }
 
           // Ripple forces: expanding circular wave that displaces particles along radial direction
-          if (ripples.length > 0) {
-            for (let i = 0; i < ripples.length; i++) {
-              const ripple = ripples[i]
+          if (ripplesRef.current.length > 0) {
+            for (let i = 0; i < ripplesRef.current.length; i++) {
+              const ripple = ripplesRef.current[i]
               const rdx = ripple.x - particle.x
               const rdy = ripple.y - particle.y
               const rDist = Math.sqrt(rdx * rdx + rdy * rdy) + 0.0001
@@ -230,7 +241,7 @@ function ParticleSystem() {
       }
       clearTimeout(mouseTimeout)
     }
-  }, [mousePosition, isMouseActive])
+  }, [])
 
   return (
     <div className="particle-system">
@@ -246,7 +257,7 @@ function ParticleSystem() {
             width: `${particle.size}px`,
             height: `${particle.size}px`,
             opacity: particle.opacity,
-            transition: isMouseActive ? 'none' : 'all 0.4s ease-out'
+            transition: isMouseActiveRef.current ? 'none' : 'all 0.4s ease-out'
           }}
         />
       ))}
@@ -286,7 +297,7 @@ const Footer = () => {
                         </AnimatedText>
                         
                         <AnimatedText delay={1500} className="tagline">
-                            Pathway to Progress: Innovating Tomorrow's Solutions
+                            Pathway to Progress: Innovating Tomorrow&apos;s Solutions
                         </AnimatedText>
                     </div>
                 </div>
@@ -298,7 +309,7 @@ const Footer = () => {
                         <div className="footer-left">
                             <div className="footer-brand">
                                 <h2>Mukesh Singh Kabawat</h2>
-                                <p>Full Stack Developer & DevOps Engineer</p>
+                                <p>Full Stack Developer &amp; DevOps Engineer</p>
                                 <p className="footer-description">
                                     Passionate about creating innovative solutions and delivering exceptional user experiences through modern web technologies.
                                 </p>
@@ -398,7 +409,7 @@ const Footer = () => {
                             © 2024 Mukesh Singh Kabawat. All rights reserved.
                         </p>
                         <p className="credits">
-                            Designed & Developed with ❤️ by <Link className="link" href="/">@Kabawat</Link>
+                            Designed &amp; Developed with ❤️ by <Link className="link" href="/">@Kabawat</Link>
                         </p>
                         {/* SEO-only keywords removed from UI */}
                     </div>

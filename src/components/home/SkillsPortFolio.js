@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import './HexGrid.css'; // Create HexGrid.css file for styling
 
 const HexGrid = () => {
@@ -69,7 +70,7 @@ const HexGrid = () => {
                                     <div className="border-3"></div>
                                 </div>
                                 <div className="label">
-                                    <img src={hex.image} alt={hex.title} />
+                                    <Image src={hex.image} alt={hex.title} width={64} height={64} />
                                 </div>
                                 <div className="hexagon">
                                     <div className="hex-inner-1">

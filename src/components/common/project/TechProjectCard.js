@@ -16,8 +16,8 @@ const TechProjectCard = ({
       <div className="tech-card__body">
         <div className="copy">
           <div className="code-panel">
-            <div className="code-line"><span className="prompt">$</span> project init --name "{title}"</div>
-            <div className="code-line"><span className="prompt">$</span> echo "{description}"</div>
+            <div className="code-line"><span className="prompt">$</span> project init --name &quot;{title}&quot;</div>
+            <div className="code-line"><span className="prompt">$</span> echo &quot;{description}&quot;</div>
             {tags?.length > 0 ? (
               <div className="code-line tags">
                 <span className="prompt">$</span> tags: {tags.map((t, i) => (

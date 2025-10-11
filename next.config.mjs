@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Security headers
   async headers() {
     return [
       {
@@ -47,15 +46,18 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+      },
+    ],
   },
   
-  // Performance optimizations
   compress: true,
   poweredByHeader: false,
   
-  // Experimental features for better performance
   experimental: {
-    optimizeCss: true,
     scrollRestoration: true,
   },
   
