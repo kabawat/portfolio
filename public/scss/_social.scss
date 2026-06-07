@@ -68,6 +68,13 @@ $color: #fff;$alpha: 0.3;$cta-color: #f6880a;
         }
     }
 
+    .GitLab {
+        &:hover {
+            .tooltip {
+                @include tooltip-styles(#fc6d26, #fff);}
+        }
+    }
+
     .Whatsapp {
         &:hover {
             .tooltip {

@@ -15,6 +15,7 @@ import Breadcrumb from '@/components/common/Breadcrumb'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import ProjectShowcase from '@/components/common/project/ProjectShowcase'
+import DevActivity from '@/components/home/DevActivity'
 
 
 const Home = () => {
@@ -38,6 +39,7 @@ const Home = () => {
           {/* <Project /> */}
           <ProjectShowcase/>
         </div>
+        <DevActivity />
         {/* <div className="py-5 skills" id='skill'>
           <Skills />
         </div> */}

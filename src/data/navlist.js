@@ -1,19 +1,23 @@
 const navList = [
     {
         title: 'home',
-        link: '/'
-    },
-    {
-        title: 'contact',
-        link: '/'
+        link: '/#home'
     },
     {
         title: 'about us',
-        link: '/'
+        link: '/#about'
+    },
+    {
+        title: 'activity',
+        link: '/#activity'
     },
     {
         title: 'skills',
-        link: '/'
+        link: '/#interactive-skills'
+    },
+    {
+        title: 'contact',
+        link: '/#Contect'
     },
 ]
 
